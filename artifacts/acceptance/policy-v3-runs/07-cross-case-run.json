@@ -1,0 +1,7 @@
+{
+  "http_status": 500,
+  "ok": false,
+  "body": {
+    "detail": "{\"message\":\"Error running graph: Error building Component Retrieve Applicable Policy: \\n\\ncase_id does not own the supplied analysis_run_id\",\"traceback\":null,\"description\":null,\"code\":null,\"suggestion\":null}"
+  }
+}

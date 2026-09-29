@@ -1,0 +1,14 @@
+{
+  "http_status": 422,
+  "ok": false,
+  "body": {
+    "detail": {
+      "error": "Refused tweaks",
+      "code": "TWEAKS_REFUSED",
+      "message": "The field is protected and keeps the value set by the flow author.",
+      "fields": [
+        "code"
+      ]
+    }
+  }
+}

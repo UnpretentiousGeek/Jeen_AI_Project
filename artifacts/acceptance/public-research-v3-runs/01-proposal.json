@@ -1,0 +1,134 @@
+{
+  "http_status": 200,
+  "ok": true,
+  "body": {
+    "session_id": "public-research-v3-01-proposal-1790324232065-a0f2bd",
+    "outputs": [
+      {
+        "inputs": {
+          "input_value": "{\"operation_mode\":\"propose_research\",\"analysis_run_id\":\"a3000000-0000-4000-8000-000000000041\",\"task_id\":\"public-research-proposal-41-1790324232065-a0f2bd\",\"context_id\":\"public-research-context-41-1790324232065-a0f2bd\",\"case_id\":\"32000000-0000-0000-0000-000000000041\",\"evidence_gap_id\":\"b3000000-0000-4000-8000-000000000041\"}"
+        },
+        "outputs": [
+          {
+            "results": {
+              "message": {
+                "text_key": "text",
+                "data": {
+                  "text": "```json\n{\n  \"contract_version\": \"3.3.0\",\n  \"contribution_kind\": \"public_research_specialist_contribution\",\n  \"contribution_id\": \"public-research-public-research-proposal-41-1790324232065-a0f2bd\",\n  \"case_id\": \"32000000-0000-0000-0000-000000000041\",\n  \"analysis_run_id\": \"a3000000-0000-4000-8000-000000000041\",\n  \"task_id\": \"public-research-proposal-41-1790324232065-a0f2bd\",\n  \"context_id\": \"public-research-context-41-1790324232065-a0f2bd\",\n  \"specialist\": {\n    \"name\": \"kyb-public-research-agent\",\n    \"version\": \"3.3.0\"\n  },\n  \"specialty\": \"public_research\",\n  \"operation_mode\": \"propose_research\",\n  \"source_scope\": {\n    \"network_access\": false,\n    \"search_execution_approval_is_evidence_acceptance\": false,\n    \"analysis_source\": \"documented_evidence_gap\"\n  },\n  \"error\": null,\n  \"status\": \"proposal_ready\",\n  \"documented_gap\": {\n    \"evidence_gap_id\": \"b3000000-0000-4000-8000-000000000041\",\n    \"requirement_code\": \"LIC-PUBLIC-41\",\n    \"description\": \"The applicant claims money transmitter license MT-41, but the pinned case evidence contains no authoritative license record.\",\n    \"requested_evidence\": \"An authoritative public record that directly supports or contradicts license MT-41.\"\n  },\n  \"research_proposal\": {\n    \"proposal_kind\": \"search_execution_approval\",\n    \"evidence_gap_id\": \"b3000000-0000-4000-8000-000000000041\",\n    \"claim_id\": \"licensing\",\n    \"claim\": \"Public Research Example 41 Ltd holds money transmitter license MT-41.\",\n    \"query\": \"\\\"Public Research Example 41 Ltd\\\" \\\"MT-41\\\"\",\n    \"allowed_domains\": [\n      \"regulator.example.gov\"\n    ],\n    \"disclosed_applicant_fields\": [\n      \"legal_name\",\n      \"claimed_license_type\",\n      \"jurisdiction\"\n    ],\n    \"result_limit\": 5,\n    \"rationale\": \"Resolve the documented licensing evidence gap using bounded official-domain research.\",\n    \"requires_explicit_search_execution_approval\": true,\n    \"requires_separate_web_result_review\": true\n  },\n  \"approved_plan\": null,\n  \"entity_matches\": [],\n  \"claim_assessments\": [],\n  \"conflicts\": [],\n  \"evidence_gaps\": [\n    {\n      \"evidence_gap_id\": \"b3000000-0000-4000-8000-000000000041\",\n      \"requirement_code\": \"LIC-PUBLIC-41\",\n      \"description\": \"The applicant claims money transmitter license MT-41, but the pinned case evidence contains no authoritative license record.\",\n      \"requested_evidence\": \"An authoritative public record that directly supports or contradicts license MT-41.\"\n    }\n  ],\n  \"excluded_results\": [],\n  \"citations\": [],\n  \"limitations\": [\n    \"No search was executed and no web result was accepted as evidence by this operation.\"\n  ],\n  \"follow_up_proposals\": [],\n  \"scope_proof\": \"ac3969351b0b9644c24e188d08bb94f2ccffd72cd7a80abdbed4012f96e270be\",\n  \"deterministic_validation\": {\n    \"validator\": \"public-research-contribution-v3.3.0\",\n    \"outcome\": \"accepted\",\n    \"checks\": [\n      \"operation_mode\",\n      \"case_run_relationship\",\n      \"task_context_identity\",\n      \"documented_gap\",\n      \"exact_query_domain_disclosure_limit_claim\",\n      \"search_execution_approval_boundary\",\n      \"web_result_review_boundary\",\n      \"approved_plan_correlation\",\n      \"immutable_result_ids\",\n      \"acceptance_state\",\n      \"citation_urls\",\n      \"citation_excerpts\",\n      \"citation_source_dates\",\n      \"citation_hashes\",\n      \"entity_match\",\n      \"claim_specificity\",\n      \"conflict_visibility\",\n      \"bounded_follow_up\"\n    ],\n    \"validated_at\": \"2026-09-25T08:17:13.808429Z\"\n  }\n}\n```",
+                  "files": [],
+                  "sender": "Machine",
+                  "sender_name": "KYB Ownership V3",
+                  "session_id": "public-research-v3-01-proposal-1790324232065-a0f2bd",
+                  "context_id": "",
+                  "run_id": null,
+                  "timestamp": "2026-09-25 08:17:13.812694 UTC",
+                  "flow_id": "eaccfa78-adb0-4119-810a-ab141417dafb",
+                  "error": false,
+                  "edit": false,
+                  "properties": {
+                    "text_color": null,
+                    "background_color": null,
+                    "edited": false,
+                    "source": {
+                      "id": "CustomComponent-PublicResearchValidatorV3",
+                      "display_name": "Validate Public Research Contribution",
+                      "source": "Validate Public Research Contribution"
+                    },
+                    "icon": null,
+                    "allow_markdown": false,
+                    "positive_feedback": null,
+                    "state": "complete",
+                    "targets": [],
+                    "usage": {
+                      "input_tokens": 656,
+                      "output_tokens": 19,
+                      "total_tokens": 675
+                    },
+                    "build_duration": null
+                  },
+                  "category": "message",
+                  "content_blocks": [],
+                  "duration": null,
+                  "session_metadata": null
+                },
+                "default_value": "",
+                "sender": "Machine",
+                "sender_name": "KYB Ownership V3",
+                "files": [],
+                "session_id": "public-research-v3-01-proposal-1790324232065-a0f2bd",
+                "context_id": "",
+                "run_id": null,
+                "timestamp": "2026-09-25 08:17:13.812694 UTC",
+                "flow_id": "eaccfa78-adb0-4119-810a-ab141417dafb",
+                "error": false,
+                "edit": false,
+                "properties": {
+                  "text_color": null,
+                  "background_color": null,
+                  "edited": false,
+                  "source": {
+                    "id": "CustomComponent-PublicResearchValidatorV3",
+                    "display_name": "Validate Public Research Contribution",
+                    "source": "Validate Public Research Contribution"
+                  },
+                  "icon": null,
+                  "allow_markdown": false,
+                  "positive_feedback": null,
+                  "state": "complete",
+                  "targets": [],
+                  "usage": {
+                    "input_tokens": 656,
+                    "output_tokens": 19,
+                    "total_tokens": 675
+                  },
+                  "build_duration": null
+                },
+                "category": "message",
+                "content_blocks": [],
+                "duration": null,
+                "session_metadata": null,
+                "text": "```json\n{\n  \"contract_version\": \"3.3.0\",\n  \"contribution_kind\": \"public_research_specialist_contribution\",\n  \"contribution_id\": \"public-research-public-research-proposal-41-1790324232065-a0f2bd\",\n  \"case_id\": \"32000000-0000-0000-0000-000000000041\",\n  \"analysis_run_id\": \"a3000000-0000-4000-8000-000000000041\",\n  \"task_id\": \"public-research-proposal-41-1790324232065-a0f2bd\",\n  \"context_id\": \"public-research-context-41-1790324232065-a0f2bd\",\n  \"specialist\": {\n    \"name\": \"kyb-public-research-agent\",\n    \"version\": \"3.3.0\"\n  },\n  \"specialty\": \"public_research\",\n  \"operation_mode\": \"propose_research\",\n  \"source_scope\": {\n    \"network_access\": false,\n    \"search_execution_approval_is_evidence_acceptance\": false,\n    \"analysis_source\": \"documented_evidence_gap\"\n  },\n  \"error\": null,\n  \"status\": \"proposal_ready\",\n  \"documented_gap\": {\n    \"evidence_gap_id\": \"b3000000-0000-4000-8000-000000000041\",\n    \"requirement_code\": \"LIC-PUBLIC-41\",\n    \"description\": \"The applicant claims money transmitter license MT-41, but the pinned case evidence contains no authoritative license record.\",\n    \"requested_evidence\": \"An authoritative public record that directly supports or contradicts license MT-41.\"\n  },\n  \"research_proposal\": {\n    \"proposal_kind\": \"search_execution_approval\",\n    \"evidence_gap_id\": \"b3000000-0000-4000-8000-000000000041\",\n    \"claim_id\": \"licensing\",\n    \"claim\": \"Public Research Example 41 Ltd holds money transmitter license MT-41.\",\n    \"query\": \"\\\"Public Research Example 41 Ltd\\\" \\\"MT-41\\\"\",\n    \"allowed_domains\": [\n      \"regulator.example.gov\"\n    ],\n    \"disclosed_applicant_fields\": [\n      \"legal_name\",\n      \"claimed_license_type\",\n      \"jurisdiction\"\n    ],\n    \"result_limit\": 5,\n    \"rationale\": \"Resolve the documented licensing evidence gap using bounded official-domain research.\",\n    \"requires_explicit_search_execution_approval\": true,\n    \"requires_separate_web_result_review\": true\n  },\n  \"approved_plan\": null,\n  \"entity_matches\": [],\n  \"claim_assessments\": [],\n  \"conflicts\": [],\n  \"evidence_gaps\": [\n    {\n      \"evidence_gap_id\": \"b3000000-0000-4000-8000-000000000041\",\n      \"requirement_code\": \"LIC-PUBLIC-41\",\n      \"description\": \"The applicant claims money transmitter license MT-41, but the pinned case evidence contains no authoritative license record.\",\n      \"requested_evidence\": \"An authoritative public record that directly supports or contradicts license MT-41.\"\n    }\n  ],\n  \"excluded_results\": [],\n  \"citations\": [],\n  \"limitations\": [\n    \"No search was executed and no web result was accepted as evidence by this operation.\"\n  ],\n  \"follow_up_proposals\": [],\n  \"scope_proof\": \"ac3969351b0b9644c24e188d08bb94f2ccffd72cd7a80abdbed4012f96e270be\",\n  \"deterministic_validation\": {\n    \"validator\": \"public-research-contribution-v3.3.0\",\n    \"outcome\": \"accepted\",\n    \"checks\": [\n      \"operation_mode\",\n      \"case_run_relationship\",\n      \"task_context_identity\",\n      \"documented_gap\",\n      \"exact_query_domain_disclosure_limit_claim\",\n      \"search_execution_approval_boundary\",\n      \"web_result_review_boundary\",\n      \"approved_plan_correlation\",\n      \"immutable_result_ids\",\n      \"acceptance_state\",\n      \"citation_urls\",\n      \"citation_excerpts\",\n      \"citation_source_dates\",\n      \"citation_hashes\",\n      \"entity_match\",\n      \"claim_specificity\",\n      \"conflict_visibility\",\n      \"bounded_follow_up\"\n    ],\n    \"validated_at\": \"2026-09-25T08:17:13.808429Z\"\n  }\n}\n```"
+              }
+            },
+            "artifacts": {
+              "message": "```json\n\n{\n\n  \"contract_version\": \"3.3.0\",\n\n  \"contribution_kind\": \"public_research_specialist_contribution\",\n\n  \"contribution_id\": \"public-research-public-research-proposal-41-1790324232065-a0f2bd\",\n\n  \"case_id\": \"32000000-0000-0000-0000-000000000041\",\n\n  \"analysis_run_id\": \"a3000000-0000-4000-8000-000000000041\",\n\n  \"task_id\": \"public-research-proposal-41-1790324232065-a0f2bd\",\n\n  \"context_id\": \"public-research-context-41-1790324232065-a0f2bd\",\n\n  \"specialist\": {\n\n    \"name\": \"kyb-public-research-agent\",\n\n    \"version\": \"3.3.0\"\n\n  },\n\n  \"specialty\": \"public_research\",\n\n  \"operation_mode\": \"propose_research\",\n\n  \"source_scope\": {\n\n    \"network_access\": false,\n\n    \"search_execution_approval_is_evidence_acceptance\": false,\n\n    \"analysis_source\": \"documented_evidence_gap\"\n\n  },\n\n  \"error\": null,\n\n  \"status\": \"proposal_ready\",\n\n  \"documented_gap\": {\n\n    \"evidence_gap_id\": \"b3000000-0000-4000-8000-000000000041\",\n\n    \"requirement_code\": \"LIC-PUBLIC-41\",\n\n    \"description\": \"The applicant claims money transmitter license MT-41, but the pinned case evidence contains no authoritative license record.\",\n\n    \"requested_evidence\": \"An authoritative public record that directly supports or contradicts license MT-41.\"\n\n  },\n\n  \"research_proposal\": {\n\n    \"proposal_kind\": \"search_execution_approval\",\n\n    \"evidence_gap_id\": \"b3000000-0000-4000-8000-000000000041\",\n\n    \"claim_id\": \"licensing\",\n\n    \"claim\": \"Public Research Example 41 Ltd holds money transmitter license MT-41.\",\n\n    \"query\": \"\\\"Public Research Example 41 Ltd\\\" \\\"MT-41\\\"\",\n\n    \"allowed_domains\": [\n\n      \"regulator.example.gov\"\n\n    ],\n\n    \"disclosed_applicant_fields\": [\n\n      \"legal_name\",\n\n      \"claimed_license_type\",\n\n      \"jurisdiction\"\n\n    ],\n\n    \"result_limit\": 5,\n\n    \"rationale\": \"Resolve the documented licensing evidence gap using bounded official-domain research.\",\n\n    \"requires_explicit_search_execution_approval\": true,\n\n    \"requires_separate_web_result_review\": true\n\n  },\n\n  \"approved_plan\": null,\n\n  \"entity_matches\": [],\n\n  \"claim_assessments\": [],\n\n  \"conflicts\": [],\n\n  \"evidence_gaps\": [\n\n    {\n\n      \"evidence_gap_id\": \"b3000000-0000-4000-8000-000000000041\",\n\n      \"requirement_code\": \"LIC-PUBLIC-41\",\n\n      \"description\": \"The applicant claims money transmitter license MT-41, but the pinned case evidence contains no authoritative license record.\",\n\n      \"requested_evidence\": \"An authoritative public record that directly supports or contradicts license MT-41.\"\n\n    }\n\n  ],\n\n  \"excluded_results\": [],\n\n  \"citations\": [],\n\n  \"limitations\": [\n\n    \"No search was executed and no web result was accepted as evidence by this operation.\"\n\n  ],\n\n  \"follow_up_proposals\": [],\n\n  \"scope_proof\": \"ac3969351b0b9644c24e188d08bb94f2ccffd72cd7a80abdbed4012f96e270be\",\n\n  \"deterministic_validation\": {\n\n    \"validator\": \"public-research-contribution-v3.3.0\",\n\n    \"outcome\": \"accepted\",\n\n    \"checks\": [\n\n      \"operation_mode\",\n\n      \"case_run_relationship\",\n\n      \"task_context_identity\",\n\n      \"documented_gap\",\n\n      \"exact_query_domain_disclosure_limit_claim\",\n\n      \"search_execution_approval_boundary\",\n\n      \"web_result_review_boundary\",\n\n      \"approved_plan_correlation\",\n\n      \"immutable_result_ids\",\n\n      \"acceptance_state\",\n\n      \"citation_urls\",\n\n      \"citation_excerpts\",\n\n      \"citation_source_dates\",\n\n      \"citation_hashes\",\n\n      \"entity_match\",\n\n      \"claim_specificity\",\n\n      \"conflict_visibility\",\n\n      \"bounded_follow_up\"\n\n    ],\n\n    \"validated_at\": \"2026-09-25T08:17:13.808429Z\"\n\n  }\n\n}\n\n```",
+              "sender": "Machine",
+              "sender_name": "KYB Ownership V3",
+              "files": [],
+              "type": "object"
+            },
+            "outputs": {
+              "message": {
+                "message": "```json\n{\n  \"contract_version\": \"3.3.0\",\n  \"contribution_kind\": \"public_research_specialist_contribution\",\n  \"contribution_id\": \"public-research-public-research-proposal-41-1790324232065-a0f2bd\",\n  \"case_id\": \"32000000-0000-0000-0000-000000000041\",\n  \"analysis_run_id\": \"a3000000-0000-4000-8000-000000000041\",\n  \"task_id\": \"public-research-proposal-41-1790324232065-a0f2bd\",\n  \"context_id\": \"public-research-context-41-1790324232065-a0f2bd\",\n  \"specialist\": {\n    \"name\": \"kyb-public-research-agent\",\n    \"version\": \"3.3.0\"\n  },\n  \"specialty\": \"public_research\",\n  \"operation_mode\": \"propose_research\",\n  \"source_scope\": {\n    \"network_access\": false,\n    \"search_execution_approval_is_evidence_acceptance\": false,\n    \"analysis_source\": \"documented_evidence_gap\"\n  },\n  \"error\": null,\n  \"status\": \"proposal_ready\",\n  \"documented_gap\": {\n    \"evidence_gap_id\": \"b3000000-0000-4000-8000-000000000041\",\n    \"requirement_code\": \"LIC-PUBLIC-41\",\n    \"description\": \"The applicant claims money transmitter license MT-41, but the pinned case evidence contains no authoritative license record.\",\n    \"requested_evidence\": \"An authoritative public record that directly supports or contradicts license MT-41.\"\n  },\n  \"research_proposal\": {\n    \"proposal_kind\": \"search_execution_approval\",\n    \"evidence_gap_id\": \"b3000000-0000-4000-8000-000000000041\",\n    \"claim_id\": \"licensing\",\n    \"claim\": \"Public Research Example 41 Ltd holds money transmitter license MT-41.\",\n    \"query\": \"\\\"Public Research Example 41 Ltd\\\" \\\"MT-41\\\"\",\n    \"allowed_domains\": [\n      \"regulator.example.gov\"\n    ],\n    \"disclosed_applicant_fields\": [\n      \"legal_name\",\n      \"claimed_license_type\",\n      \"jurisdiction\"\n    ],\n    \"result_limit\": 5,\n    \"rationale\": \"Resolve the documented licensing evidence gap using bounded official-domain research.\",\n    \"requires_explicit_search_execution_approval\": true,\n    \"requires_separate_web_result_review\": true\n  },\n  \"approved_plan\": null,\n  \"entity_matches\": [],\n  \"claim_assessments\": [],\n  \"conflicts\": [],\n  \"evidence_gaps\": [\n    {\n      \"evidence_gap_id\": \"b3000000-0000-4000-8000-000000000041\",\n      \"requirement_code\": \"LIC-PUBLIC-41\",\n      \"description\": \"The applicant claims money transmitter license MT-41, but the pinned case evidence contains no authoritative license record.\",\n      \"requested_evidence\": \"An authoritative public record that directly supports or contradicts license MT-41.\"\n    }\n  ],\n  \"excluded_results\": [],\n  \"citations\": [],\n  \"limitations\": [\n    \"No search was executed and no web result was accepted as evidence by this operation.\"\n  ],\n  \"follow_up_proposals\": [],\n  \"scope_proof\": \"ac3969351b0b9644c24e188d08bb94f2ccffd72cd7a80abdbed4012f96e270be\",\n  \"deterministic_validation\": {\n    \"validator\": \"public-research-contribution-v3.3.0\",\n    \"outcome\": \"accepted\",\n    \"checks\": [\n      \"operation_mode\",\n      \"case_run_relationship\",\n      \"task_context_identity\",\n      \"documented_gap\",\n      \"exact_query_domain_disclosure_limit_claim\",\n      \"search_execution_approval_boundary\",\n      \"web_result_review_boundary\",\n      \"approved_plan_correlation\",\n      \"immutable_result_ids\",\n      \"acceptance_state\",\n      \"citation_urls\",\n      \"citation_excerpts\",\n      \"citation_source_dates\",\n      \"citation_hashes\",\n      \"entity_match\",\n      \"claim_specificity\",\n      \"conflict_visibility\",\n      \"bounded_follow_up\"\n    ],\n    \"validated_at\": \"2026-09-25T08:17:13.808429Z\"\n  }\n}\n```",
+                "type": "text"
+              }
+            },
+            "logs": {
+              "message": []
+            },
+            "messages": [
+              {
+                "message": "```json\n\n{\n\n  \"contract_version\": \"3.3.0\",\n\n  \"contribution_kind\": \"public_research_specialist_contribution\",\n\n  \"contribution_id\": \"public-research-public-research-proposal-41-1790324232065-a0f2bd\",\n\n  \"case_id\": \"32000000-0000-0000-0000-000000000041\",\n\n  \"analysis_run_id\": \"a3000000-0000-4000-8000-000000000041\",\n\n  \"task_id\": \"public-research-proposal-41-1790324232065-a0f2bd\",\n\n  \"context_id\": \"public-research-context-41-1790324232065-a0f2bd\",\n\n  \"specialist\": {\n\n    \"name\": \"kyb-public-research-agent\",\n\n    \"version\": \"3.3.0\"\n\n  },\n\n  \"specialty\": \"public_research\",\n\n  \"operation_mode\": \"propose_research\",\n\n  \"source_scope\": {\n\n    \"network_access\": false,\n\n    \"search_execution_approval_is_evidence_acceptance\": false,\n\n    \"analysis_source\": \"documented_evidence_gap\"\n\n  },\n\n  \"error\": null,\n\n  \"status\": \"proposal_ready\",\n\n  \"documented_gap\": {\n\n    \"evidence_gap_id\": \"b3000000-0000-4000-8000-000000000041\",\n\n    \"requirement_code\": \"LIC-PUBLIC-41\",\n\n    \"description\": \"The applicant claims money transmitter license MT-41, but the pinned case evidence contains no authoritative license record.\",\n\n    \"requested_evidence\": \"An authoritative public record that directly supports or contradicts license MT-41.\"\n\n  },\n\n  \"research_proposal\": {\n\n    \"proposal_kind\": \"search_execution_approval\",\n\n    \"evidence_gap_id\": \"b3000000-0000-4000-8000-000000000041\",\n\n    \"claim_id\": \"licensing\",\n\n    \"claim\": \"Public Research Example 41 Ltd holds money transmitter license MT-41.\",\n\n    \"query\": \"\\\"Public Research Example 41 Ltd\\\" \\\"MT-41\\\"\",\n\n    \"allowed_domains\": [\n\n      \"regulator.example.gov\"\n\n    ],\n\n    \"disclosed_applicant_fields\": [\n\n      \"legal_name\",\n\n      \"claimed_license_type\",\n\n      \"jurisdiction\"\n\n    ],\n\n    \"result_limit\": 5,\n\n    \"rationale\": \"Resolve the documented licensing evidence gap using bounded official-domain research.\",\n\n    \"requires_explicit_search_execution_approval\": true,\n\n    \"requires_separate_web_result_review\": true\n\n  },\n\n  \"approved_plan\": null,\n\n  \"entity_matches\": [],\n\n  \"claim_assessments\": [],\n\n  \"conflicts\": [],\n\n  \"evidence_gaps\": [\n\n    {\n\n      \"evidence_gap_id\": \"b3000000-0000-4000-8000-000000000041\",\n\n      \"requirement_code\": \"LIC-PUBLIC-41\",\n\n      \"description\": \"The applicant claims money transmitter license MT-41, but the pinned case evidence contains no authoritative license record.\",\n\n      \"requested_evidence\": \"An authoritative public record that directly supports or contradicts license MT-41.\"\n\n    }\n\n  ],\n\n  \"excluded_results\": [],\n\n  \"citations\": [],\n\n  \"limitations\": [\n\n    \"No search was executed and no web result was accepted as evidence by this operation.\"\n\n  ],\n\n  \"follow_up_proposals\": [],\n\n  \"scope_proof\": \"ac3969351b0b9644c24e188d08bb94f2ccffd72cd7a80abdbed4012f96e270be\",\n\n  \"deterministic_validation\": {\n\n    \"validator\": \"public-research-contribution-v3.3.0\",\n\n    \"outcome\": \"accepted\",\n\n    \"checks\": [\n\n      \"operation_mode\",\n\n      \"case_run_relationship\",\n\n      \"task_context_identity\",\n\n      \"documented_gap\",\n\n      \"exact_query_domain_disclosure_limit_claim\",\n\n      \"search_execution_approval_boundary\",\n\n      \"web_result_review_boundary\",\n\n      \"approved_plan_correlation\",\n\n      \"immutable_result_ids\",\n\n      \"acceptance_state\",\n\n      \"citation_urls\",\n\n      \"citation_excerpts\",\n\n      \"citation_source_dates\",\n\n      \"citation_hashes\",\n\n      \"entity_match\",\n\n      \"claim_specificity\",\n\n      \"conflict_visibility\",\n\n      \"bounded_follow_up\"\n\n    ],\n\n    \"validated_at\": \"2026-09-25T08:17:13.808429Z\"\n\n  }\n\n}\n\n```",
+                "sender": "Machine",
+                "sender_name": "KYB Ownership V3",
+                "session_id": "public-research-v3-01-proposal-1790324232065-a0f2bd",
+                "stream_url": null,
+                "component_id": "ChatOutput-PublicResearchV3",
+                "files": [],
+                "type": "text"
+              }
+            ],
+            "timedelta": null,
+            "duration": null,
+            "component_display_name": "Chat Output",
+            "component_id": "ChatOutput-PublicResearchV3",
+            "used_frozen_result": false,
+            "token_usage": null
+          }
+        ]
+      }
+    ]
+  },
+  "attempt": 1,
+  "parse_error": null
+}

@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A static Jeen AI case review workspace mockup."
+    />
+    <title>Jeen AI · Case review mockup</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to case details</a>
+
+    <svg class="svg-sprite" aria-hidden="true">
+      <symbol id="icon-shield" viewBox="0 0 24 24">
+        <path d="M12 3 20 7v5c0 5-3.4 8-8 9-4.6-1-8-4-8-9V7l8-4Z" />
+        <path d="m9.25 12 1.8 1.8 3.9-4.1" />
+      </symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24">
+        <path d="M12 5v14M5 12h14" />
+      </symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="7" />
+        <path d="m20 20-4-4" />
+      </symbol>
+      <symbol id="icon-chevron" viewBox="0 0 24 24">
+        <path d="m9 18 6-6-6-6" />
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6" />
+      </symbol>
+      <symbol id="icon-file" viewBox="0 0 24 24">
+        <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9Z" />
+        <path d="M14 3v6h6M8 13h8M8 17h5" />
+      </symbol>
+      <symbol id="icon-link" viewBox="0 0 24 24">
+        <path d="M10 13a5 5 0 0 0 7.1.1l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1" />
+        <path d="M14 11a5 5 0 0 0-7.1-.1l-2 2A5 5 0 0 0 12 20l1.1-1.1" />
+      </symbol>
+      <symbol id="icon-sparkle" viewBox="0 0 24 24">
+        <path d="m12 3 1.2 3.8A6 6 0 0 0 17.2 11L21 12l-3.8 1.2a6 6 0 0 0-4 4L12 21l-1.2-3.8a6 6 0 0 0-4-4L3 12l3.8-1.2a6 6 0 0 0 4-4Z" />
+      </symbol>
+      <symbol id="icon-message" viewBox="0 0 24 24">
+        <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4Z" />
+      </symbol>
+      <symbol id="icon-x" viewBox="0 0 24 24">
+        <path d="m6 6 12 12M18 6 6 18" />
+      </symbol>
+    </svg>
+
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Case workspace navigation">
+        <div class="brand-row">
+          <span class="brand-mark" aria-hidden="true">
+            <svg><use href="#icon-shield"></use></svg>
+          </span>
+          <span>
+            <strong>Jeen AI</strong>
+            <small>Review workspace</small>
+          </span>
+        </div>
+
+        <button class="button button-primary new-case-button" type="button" id="new-case-button">
+          <svg aria-hidden="true"><use href="#icon-plus"></use></svg>
+          Start new case
+        </button>
+
+        <nav class="primary-nav" aria-label="Primary">
+          <a class="nav-item active" href="#main-content" aria-current="page">
+            <span>Cases</span>
+            <span class="nav-count">12</span>
+          </a>
+          <a class="nav-item" href="#activity-panel">
+            <span>Activity</span>
+            <span class="nav-count">4</span>
+          </a>
+        </nav>
+
+        <section class="queue-summary" aria-labelledby="queue-summary-title">
+          <div class="section-heading-row">
+            <h2 id="queue-summary-title">Queue</h2>
+            <span>12 total</span>
+          </div>
+          <div class="mini-stats">
+            <div><strong>3</strong><span>Processing</span></div>
+            <div><strong>4</strong><span>For review</span></div>
+            <div><strong>2</strong><span>Approval</span></div>
+          </div>
+        </section>
+
+        <label class="search-field" for="case-search">
+          <svg aria-hidden="true"><use href="#icon-search"></use></svg>
+          <span class="sr-only">Search cases</span>
+          <input id="case-search" type="search" placeholder="Search cases…" />
+        </label>
+
+        <section class="case-list" aria-labelledby="case-list-title">
+          <div class="section-heading-row">
+            <h2 id="case-list-title">Recent cases</h2>
+            <button class="text-button" type="button">View all</button>
+          </div>
+
+          <button class="case-row selected" type="button" data-case="Cascade Goods Inc" data-reference="KYB-0241" data-status="Ready for review">
+            <span class="case-row-top">
+              <strong>Cascade Goods Inc</strong>
+              <svg aria-hidden="true"><use href="#icon-chevron"></use></svg>
+            </span>
+            <span class="case-row-meta">
+              <span class="status-dot status-review"></span>Ready for review
+              <span>18m</span>
+            </span>
+          </button>
+
+          <button class="case-row" type="button" data-case="Northstar Remittance" data-reference="KYB-0240" data-status="Approval needed">
+            <span class="case-row-top">
+              <strong>Northstar Remittance</strong>
+              <svg aria-hidden="true"><use href="#icon-chevron"></use></svg>
+            </span>
+            <span class="case-row-meta">
+              <span class="status-dot status-approval"></span>Approval needed
+              <span>42m</span>
+            </span>
+          </button>
+
+          <button class="case-row" type="button" data-case="Mercado Bridge Ltd" data-reference="KYB-0238" data-status="Input needed">
+            <span class="case-row-top">
+              <strong>Mercado Bridge Ltd</strong>
+              <svg aria-hidden="true"><use href="#icon-chevron"></use></svg>
+            </span>
+            <span class="case-row-meta">
+              <span class="status-dot status-approval"></span>Input needed
+              <span>1h</span>
+            </span>
+          </button>
+
+          <button class="case-row" type="button" data-case="Acme Analytics LLC" data-reference="KYB-0237" data-status="Completed">
+            <span class="case-row-top">
+              <strong>Acme Analytics LLC</strong>
+              <svg aria-hidden="true"><use href="#icon-chevron"></use></svg>
+            </span>
+            <span class="case-row-meta">
+              <span class="status-dot status-complete"></span>Completed
+              <span>Yesterday</span>
+            </span>
+          </button>
+        </section>
+
+        <div class="analyst-card">
+          <span class="avatar" aria-hidden="true">ST</span>
+          <span><strong>Sanchit Tomar</strong><small>Compliance analyst</small></span>
+          <button type="button" aria-label="Open analyst menu">…</button>
+        </div>
+      </aside>
+
+      <main id="main-content" class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow"><span id="case-reference">KYB-0241</span> · United States</p>
+            <h1 id="case-name">Cascade Goods Inc</h1>
+          </div>
+          <div class="topbar-actions">
+            <span class="status-pill" id="case-status"><span></span>Ready for review</span>
+            <button class="icon-button" type="button" aria-label="Ask about this case">
+              <svg><use href="#icon-message"></use></svg>
+            </button>
+            <button class="button button-primary" type="button" id="open-review">Review decision</button>
+          </div>
+        </header>
+
+        <section class="case-facts" aria-label="Case summary">
+          <div><span>Jurisdiction</span><strong>United States</strong></div>
+          <div><span>Business type</span><strong>Software</strong></div>
+          <div><span>Product</span><strong>Domestic payments</strong></div>
+          <div><span>Risk level</span><strong class="risk-label">Medium</strong></div>
+        </section>
+
+        <div class="tabs" role="tablist" aria-label="Case views">
+          <button id="overview-tab" role="tab" aria-selected="true" aria-controls="overview-panel" data-tab="overview-panel">Overview</button>
+          <button id="evidence-tab" role="tab" aria-selected="false" aria-controls="evidence-panel" data-tab="evidence-panel">Evidence <span>8</span></button>
+          <button id="activity-tab" role="tab" aria-selected="false" aria-controls="activity-panel" data-tab="activity-panel">Agent activity</button>
+          <button id="audit-tab" role="tab" aria-selected="false" aria-controls="audit-panel" data-tab="audit-panel">Audit</button>
+        </div>
+
+        <section id="overview-panel" class="tab-panel active" role="tabpanel" aria-labelledby="overview-tab">
+          <section class="tool-approval-banner" id="tool-approval-banner" aria-labelledby="tool-approval-banner-title" hidden>
+            <span class="approval-banner-icon" aria-hidden="true">
+              <svg><use href="#icon-link"></use></svg>
+            </span>
+            <div>
+              <p class="eyebrow">Workflow paused</p>
+              <h2 id="tool-approval-banner-title">Public research agent wants to search external sources</h2>
+              <p>No case data has been sent. Review the exact query, shared fields, and search boundaries first.</p>
+            </div>
+            <button class="button button-primary" type="button" id="open-tool-approval-inline">Review tool request</button>
+          </section>
+
+          <section class="tool-approval-banner agent-input-banner" id="agent-input-banner" aria-labelledby="agent-input-banner-title" hidden>
+            <span class="approval-banner-icon" aria-hidden="true">
+              <svg><use href="#icon-message"></use></svg>
+            </span>
+            <div>
+              <p class="eyebrow">Agent question</p>
+              <h2 id="agent-input-banner-title">Ownership specialist needs your decision</h2>
+              <p>Two submitted records conflict. Tell the agent which ownership record it should treat as current.</p>
+            </div>
+            <button class="button button-primary" type="button" id="open-agent-input-inline">Answer agent</button>
+          </section>
+
+          <div class="workspace-grid">
+            <section class="content-column" aria-labelledby="findings-title">
+              <div class="section-title-row">
+                <div>
+                  <p class="eyebrow">Review summary</p>
+                  <h2 id="findings-title">3 findings need your attention</h2>
+                </div>
+                <button class="button button-secondary" type="button">Filter findings</button>
+              </div>
+
+              <article class="finding-card finding-warning">
+                <header class="finding-header">
+                  <div class="finding-badges">
+                    <span class="tag">DOC-4.1</span>
+                    <span class="tag tag-warning">Uncertain</span>
+                  </div>
+                  <div class="confidence"><strong>86%</strong><span>confidence</span></div>
+                </header>
+                <h3>Ownership evidence needs a stable document reference</h3>
+                <p>
+                  The ownership conclusion is plausible, but the source must include a stable page or section locator before this case can be approved.
+                </p>
+                <div class="source-list" aria-label="Sources for this finding">
+                  <button class="source-card" type="button">
+                    <span class="source-icon"><svg aria-hidden="true"><use href="#icon-file"></use></svg></span>
+                    <span><strong>Certificate of incorporation</strong><small>Applicant document · Page 4</small></span>
+                    <span class="source-index">1</span>
+                  </button>
+                  <button class="source-card" type="button">
+                    <span class="source-icon"><svg aria-hidden="true"><use href="#icon-link"></use></svg></span>
+                    <span><strong>Document acceptance policy</strong><small>Internal policy · DOC-4.1</small></span>
+                    <span class="source-index">2</span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="finding-card">
+                <header class="finding-header">
+                  <div class="finding-badges">
+                    <span class="tag">KYB-1.1</span>
+                    <span class="tag tag-success">Met</span>
+                  </div>
+                  <div class="confidence"><strong>98%</strong><span>confidence</span></div>
+                </header>
+                <h3>Declared entity identity matches registration evidence</h3>
+                <p>
+                  The legal name, registration number, jurisdiction, and registered address match the submitted company record.
+                </p>
+                <div class="inline-sources">
+                  <span>Sources</span>
+                  <button type="button">1</button><button type="button">2</button><button type="button">3</button>
+                  <span>3 verified records</span>
+                </div>
+              </article>
+            </section>
+
+            <aside class="plan-column" aria-labelledby="plan-title">
+              <section class="plan-card">
+                <div class="plan-card-header">
+                  <div>
+                    <p class="eyebrow">Agent plan</p>
+                    <h2 id="plan-title">Review path</h2>
+                  </div>
+                  <span>3 of 4</span>
+                </div>
+                <ol class="plan-list">
+                  <li class="complete">
+                    <span class="step-state"><svg aria-hidden="true"><use href="#icon-check"></use></svg></span>
+                    <span><strong>Verify company identity</strong><small>3 records matched</small></span>
+                  </li>
+                  <li class="complete">
+                    <span class="step-state"><svg aria-hidden="true"><use href="#icon-check"></use></svg></span>
+                    <span><strong>Check beneficial owners</strong><small>2 owners screened</small></span>
+                  </li>
+                  <li class="complete">
+                    <span class="step-state"><svg aria-hidden="true"><use href="#icon-check"></use></svg></span>
+                    <span><strong>Compare policy controls</strong><small>8 requirements assessed</small></span>
+                  </li>
+                  <li class="current">
+                    <span class="step-state">4</span>
+                    <span><strong id="plan-step-title">Analyst decision</strong><small id="plan-step-detail">Waiting for your review</small></span>
+                  </li>
+                </ol>
+                <button class="button button-primary full-width" type="button" id="open-review-secondary">
+                  <span id="plan-action-label">Continue review</span>
+                  <svg aria-hidden="true"><use href="#icon-chevron"></use></svg>
+                </button>
+              </section>
+
+              <section class="activity-card">
+                <div class="section-heading-row">
+                  <h2>Live agent activity</h2>
+                  <span class="live-label"><span></span>Live</span>
+                </div>
+                <div class="overview-agent-row" id="overview-active-agent">
+                  <span class="activity-progress">1</span>
+                  <span>
+                    <strong id="active-agent-name">Review coordinator</strong>
+                    <small id="active-agent-action">Analyst decision required</small>
+                    <small id="active-agent-status">Waiting for analyst</small>
+                  </span>
+                  <span class="agent-status-pill needs-input" id="active-agent-pill">Needs input</span>
+                </div>
+                <div class="overview-agent-row" id="overview-dependent-agent" hidden>
+                  <span class="activity-progress muted">2</span>
+                  <span><strong id="dependent-agent-name">Review coordinator</strong><small id="dependent-agent-action">Compile case decision</small><small id="dependent-agent-status">Waiting for Public research agent</small></span>
+                  <span class="agent-status-pill waiting">Waiting</span>
+                </div>
+                <p class="activity-empty" id="overview-agent-empty" hidden>No active agent work. This case is complete.</p>
+                <button class="activity-link" type="button" id="view-agent-activity">View all agent activity</button>
+              </section>
+            </aside>
+          </div>
+        </section>
+
+        <section id="evidence-panel" class="tab-panel" role="tabpanel" aria-labelledby="evidence-tab" hidden>
+          <div class="placeholder-panel"><p class="eyebrow">Evidence register</p><h2>8 cited sources</h2><p>Applicant documents, internal policy, and public records remain clearly separated.</p></div>
+        </section>
+        <section id="activity-panel" class="tab-panel" role="tabpanel" aria-labelledby="activity-tab" hidden>
+          <section class="agent-activity-view" aria-labelledby="agent-activity-title">
+            <div class="section-title-row">
+              <div><p class="eyebrow">Current status</p><h2 id="agent-activity-title">Agent activity</h2></div>
+              <span class="activity-order">Sorted by urgency</span>
+            </div>
+
+            <div class="agent-task-list">
+              <details class="agent-task needs-attention" id="tool-agent-task" hidden open>
+                <summary>
+                  <span class="agent-task-state">!</span>
+                  <span class="agent-task-copy"><strong>Public research agent</strong><small id="tool-agent-task-detail">External search needs your approval</small></span>
+                  <span class="agent-status-pill needs-input" id="tool-agent-task-pill">Needs approval</span>
+                  <svg aria-hidden="true"><use href="#icon-chevron"></use></svg>
+                </summary>
+                <div class="agent-task-details">
+                  <dl>
+                    <div><dt>Completed</dt><dd>Prepared a scoped regulator search</dd></div>
+                    <div><dt>Working on</dt><dd id="tool-agent-current">Nothing until approval</dd></div>
+                    <div><dt>Waiting for</dt><dd id="tool-agent-waiting">Analyst decision</dd></div>
+                    <div><dt>Next</dt><dd id="tool-agent-next">Submit the approved query</dd></div>
+                  </dl>
+                </div>
+              </details>
+
+              <details class="agent-task needs-attention" id="clarification-agent-task" hidden open>
+                <summary>
+                  <span class="agent-task-state">?</span>
+                  <span class="agent-task-copy"><strong>Ownership specialist</strong><small id="clarification-agent-task-detail">Conflicting ownership records need your answer</small></span>
+                  <span class="agent-status-pill needs-input" id="clarification-agent-task-pill">Needs input</span>
+                  <svg aria-hidden="true"><use href="#icon-chevron"></use></svg>
+                </summary>
+                <div class="agent-task-details">
+                  <dl>
+                    <div><dt>Completed</dt><dd>Extracted both submitted ownership records</dd></div>
+                    <div><dt>Working on</dt><dd id="clarification-agent-current">Nothing until your answer</dd></div>
+                    <div><dt>Waiting for</dt><dd id="clarification-agent-waiting">Analyst answer</dd></div>
+                    <div><dt>Next</dt><dd id="clarification-agent-next">Resume beneficial-owner checks</dd></div>
+                  </dl>
+                </div>
+              </details>
+
+              <details class="agent-task" id="review-agent-task" open>
+                <summary>
+                  <span class="agent-task-state">1</span>
+                  <span class="agent-task-copy"><strong>Review coordinator</strong><small id="review-agent-task-detail">Analyst decision required</small></span>
+                  <span class="agent-status-pill needs-input" id="review-agent-task-pill">Needs input</span>
+                  <svg aria-hidden="true"><use href="#icon-chevron"></use></svg>
+                </summary>
+                <div class="agent-task-details">
+                  <dl>
+                    <div><dt>Completed</dt><dd>Combined 3 specialist findings</dd></div>
+                    <div><dt>Working on</dt><dd>Preparing the review recommendation</dd></div>
+                    <div><dt>Waiting for</dt><dd id="review-agent-waiting">Analyst decision</dd></div>
+                    <div><dt>Next</dt><dd>Record the decision and resume the workflow</dd></div>
+                  </dl>
+                </div>
+              </details>
+
+              <details class="agent-task completed">
+                <summary>
+                  <span class="agent-task-state"><svg aria-hidden="true"><use href="#icon-check"></use></svg></span>
+                  <span class="agent-task-copy"><strong>Entity specialist</strong><small>Verified registration and legal identity</small></span>
+                  <span class="agent-status-pill completed">Completed</span>
+                  <svg aria-hidden="true"><use href="#icon-chevron"></use></svg>
+                </summary>
+                <div class="agent-task-details">
+                  <dl>
+                    <div><dt>Completed</dt><dd>Matched legal name, registration number, jurisdiction, and address</dd></div>
+                    <div><dt>Output</dt><dd>Entity verification finding with 3 cited records</dd></div>
+                  </dl>
+                </div>
+              </details>
+
+              <details class="agent-task completed" id="ownership-agent-completed">
+                <summary>
+                  <span class="agent-task-state"><svg aria-hidden="true"><use href="#icon-check"></use></svg></span>
+                  <span class="agent-task-copy"><strong>Ownership specialist</strong><small>Screened 2 beneficial owners</small></span>
+                  <span class="agent-status-pill completed">Completed</span>
+                  <svg aria-hidden="true"><use href="#icon-chevron"></use></svg>
+                </summary>
+                <div class="agent-task-details">
+                  <dl>
+                    <div><dt>Completed</dt><dd>Extracted ownership percentages and screened both owners</dd></div>
+                    <div><dt>Output</dt><dd>Ownership assessment with one documentation warning</dd></div>
+                  </dl>
+                </div>
+              </details>
+
+              <details class="agent-task completed">
+                <summary>
+                  <span class="agent-task-state"><svg aria-hidden="true"><use href="#icon-check"></use></svg></span>
+                  <span class="agent-task-copy"><strong>Policy specialist</strong><small>Compared 8 KYB requirements</small></span>
+                  <span class="agent-status-pill completed">Completed</span>
+                  <svg aria-hidden="true"><use href="#icon-chevron"></use></svg>
+                </summary>
+                <div class="agent-task-details">
+                  <dl>
+                    <div><dt>Completed</dt><dd>Mapped evidence against identity, ownership, and document controls</dd></div>
+                    <div><dt>Output</dt><dd>3 findings with policy citations</dd></div>
+                  </dl>
+                </div>
+              </details>
+            </div>
+          </section>
+        </section>
+        <section id="audit-panel" class="tab-panel" role="tabpanel" aria-labelledby="audit-tab" hidden>
+          <section class="audit-view" aria-labelledby="audit-title">
+            <div class="section-title-row">
+              <div><p class="eyebrow">Immutable event log</p><h2 id="audit-title">Audit trail</h2></div>
+              <span class="activity-order">12 events</span>
+            </div>
+            <ol class="audit-log">
+              <li><time datetime="2026-09-19T19:11:12Z">19:11:12</time><code>human_input.requested</code><span>Ownership specialist asked which record to use.</span></li>
+              <li><time datetime="2026-09-19T19:11:04Z">19:11:04</time><code>tool.approval.requested</code><span>Public research agent requested one external search.</span></li>
+              <li><time datetime="2026-09-19T19:10:58Z">19:10:58</time><code>agent.task.completed</code><span>Policy specialist stored artifact v1.</span></li>
+              <li><time datetime="2026-09-19T19:10:51Z">19:10:51</time><code>policy.retrieval.completed</code><span>8 applicable controls returned.</span></li>
+              <li><time datetime="2026-09-19T19:10:44Z">19:10:44</time><code>agent.task.completed</code><span>Ownership specialist stored artifact v1.</span></li>
+              <li><time datetime="2026-09-19T19:10:37Z">19:10:37</time><code>agent.retry.succeeded</code><span>Ownership extraction completed on attempt 2.</span></li>
+              <li><time datetime="2026-09-19T19:10:24Z">19:10:24</time><code>agent.task.completed</code><span>Entity specialist stored artifact v1.</span></li>
+            </ol>
+          </section>
+        </section>
+      </main>
+    </div>
+
+    <dialog class="review-dialog" id="review-dialog" aria-labelledby="review-title">
+      <form method="dialog" id="review-form">
+        <header class="dialog-header">
+          <span class="dialog-icon" aria-hidden="true"><svg><use href="#icon-sparkle"></use></svg></span>
+          <button class="icon-button" value="cancel" formnovalidate aria-label="Close review dialog">
+            <svg><use href="#icon-x"></use></svg>
+          </button>
+        </header>
+        <div class="dialog-copy">
+          <p class="eyebrow">Human review</p>
+          <h2 id="review-title">Approve Cascade Goods Inc?</h2>
+          <p>The agent recommends approval with one documentation condition.</p>
+        </div>
+
+        <div class="decision-summary">
+          <span class="decision-check"><svg aria-hidden="true"><use href="#icon-check"></use></svg></span>
+          <span><strong>Recommended: Approve with condition</strong><small>Request a stable page reference for the ownership evidence.</small></span>
+        </div>
+
+        <label class="comment-field" for="review-comment">
+          <span>Analyst comment <small>Required</small></span>
+          <textarea id="review-comment" name="comment" rows="4" minlength="8" required placeholder="Add context for this decision…"></textarea>
+          <small>This comment will be added to the audit trail.</small>
+        </label>
+
+        <footer class="dialog-actions">
+          <button class="button button-secondary" value="cancel" formnovalidate>Cancel</button>
+          <button class="button button-secondary" value="changes" id="request-changes">Request changes</button>
+          <button class="button button-primary" value="approve" id="approve-case">Approve case</button>
+        </footer>
+      </form>
+    </dialog>
+
+    <dialog class="review-dialog tool-dialog" id="tool-approval-dialog" aria-labelledby="tool-approval-title">
+      <form method="dialog" id="tool-approval-form">
+        <header class="dialog-header">
+          <span class="dialog-icon dialog-icon-warning" aria-hidden="true"><svg><use href="#icon-link"></use></svg></span>
+          <button class="icon-button" value="cancel" formnovalidate aria-label="Close tool approval dialog">
+            <svg><use href="#icon-x"></use></svg>
+          </button>
+        </header>
+
+        <div class="dialog-copy">
+          <p class="eyebrow">Tool approval</p>
+          <h2 id="tool-approval-title">Run one external search?</h2>
+          <p>The public research agent is requesting permission to send a limited query to government and regulatory websites.</p>
+        </div>
+
+        <section class="tool-request" aria-labelledby="tool-request-title">
+          <div class="tool-request-heading">
+            <span>
+              <strong id="tool-request-title">Public web search</strong>
+              <small>Requested by Public research agent</small>
+            </span>
+            <span class="tag tag-warning">Not run</span>
+          </div>
+
+          <div class="query-preview">
+            <span>Exact query</span>
+            <code>Northstar Remittance LLC licensing status enforcement action</code>
+          </div>
+
+          <dl class="tool-scope-grid">
+            <div><dt>Allowed sources</dt><dd>Government and regulatory websites</dd></div>
+            <div><dt>Maximum results</dt><dd>5 sources</dd></div>
+            <div><dt>Data sent externally</dt><dd>Legal name and jurisdiction</dd></div>
+            <div><dt>Result</dt><dd>Adds external evidence only</dd></div>
+          </dl>
+        </section>
+
+        <section class="tool-reason" aria-labelledby="tool-reason-title">
+          <h3 id="tool-reason-title">Why the agent needs this</h3>
+          <p>The submitted license cannot be verified from the applicant documents or internal records.</p>
+        </section>
+
+        <p class="scope-note"><strong>One-time scope:</strong> This approval allows one search only. It cannot approve, reject, or otherwise change the case.</p>
+
+        <label class="comment-field" for="tool-approval-comment">
+          <span>Analyst comment <small>Required</small></span>
+          <textarea id="tool-approval-comment" name="tool-comment" rows="3" minlength="8" required placeholder="Explain this decision…"></textarea>
+          <small>Your decision and comment will be added to the audit trail.</small>
+        </label>
+
+        <footer class="dialog-actions tool-dialog-actions">
+          <button class="button button-secondary" value="rejected">Reject request</button>
+          <button class="button button-secondary" value="changes">Request changes</button>
+          <button class="button button-primary" value="approved">Approve and run search</button>
+        </footer>
+      </form>
+    </dialog>
+
+    <dialog class="review-dialog input-dialog" id="agent-input-dialog" aria-labelledby="agent-input-title">
+      <form method="dialog" id="agent-input-form">
+        <header class="dialog-header">
+          <span class="dialog-icon dialog-icon-warning" aria-hidden="true"><svg><use href="#icon-message"></use></svg></span>
+          <button class="icon-button" value="cancel" formnovalidate aria-label="Close agent question">
+            <svg><use href="#icon-x"></use></svg>
+          </button>
+        </header>
+
+        <div class="dialog-copy">
+          <p class="eyebrow">Agent needs input</p>
+          <h2 id="agent-input-title">Which ownership record should I treat as current?</h2>
+          <p>The application form and shareholder register list different ownership percentages. Your answer will determine which record the agent uses for the remaining checks.</p>
+        </div>
+
+        <fieldset class="decision-options">
+          <legend class="sr-only">Which ownership record should the agent treat as current?</legend>
+          <label class="decision-option">
+            <input type="radio" name="ownership-record" value="shareholder-register" required />
+            <span><strong>Use the shareholder register</strong><small>Dated Aug 28 · Signed by the company secretary · Recommended</small></span>
+          </label>
+          <label class="decision-option">
+            <input type="radio" name="ownership-record" value="application-form" />
+            <span><strong>Use the application form</strong><small>Dated Sep 2 · Submitted through the applicant portal</small></span>
+          </label>
+          <label class="decision-option">
+            <input type="radio" name="ownership-record" value="request-document" />
+            <span><strong>Request an updated ownership document</strong><small>Pause this check until the applicant resolves the conflict</small></span>
+          </label>
+          <div class="decision-option custom-option">
+            <input id="custom-answer-choice" type="radio" name="ownership-record" value="custom" />
+            <span>
+              <label for="custom-answer-choice">Something else</label>
+              <label class="sr-only" for="custom-agent-answer">Custom answer</label>
+              <input id="custom-agent-answer" name="custom-agent-answer" type="text" placeholder="Type another answer…" />
+            </span>
+          </div>
+        </fieldset>
+
+        <p class="input-audit-note">Your answer will be added to the audit trail.</p>
+
+        <footer class="dialog-actions input-dialog-actions">
+          <span class="question-progress"><strong>1 / 1</strong><small>Question</small></span>
+          <span class="input-action-buttons">
+            <button class="button button-secondary" value="skip" formnovalidate>Skip for now</button>
+            <button class="button button-primary" value="submit">Send answer</button>
+          </span>
+        </footer>
+      </form>
+    </dialog>
+
+    <div class="toast" role="status" aria-live="polite" id="toast"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

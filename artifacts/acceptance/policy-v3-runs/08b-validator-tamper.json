@@ -1,0 +1,4 @@
+{
+  "result": "PASS",
+  "rejected_error": "Policy contribution content differs from the deterministically retrieved matrix"
+}

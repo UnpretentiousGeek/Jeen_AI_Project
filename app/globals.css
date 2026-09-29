@@ -1,0 +1,149 @@
+@import "./beautifului-foundation.css";
+
+:root {
+  --background: var(--page);
+  --foreground: var(--ink);
+  --card: var(--surface);
+  --card-foreground: var(--ink);
+  --popover: var(--surface);
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--canvas);
+  --secondary: var(--inset);
+  --secondary-foreground: var(--ink);
+  --muted: var(--inset);
+  --muted-foreground: var(--ink-2);
+  --accent-foreground: var(--ink);
+  --destructive: var(--red);
+  --border: var(--line);
+  --input: var(--line-strong);
+  --ring: var(--accent);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: var(--page);
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: var(--page);
+  background-image: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button:not(:disabled),
+[role="button"]:not(:disabled) {
+  cursor: pointer;
+}
+
+.dashboard-scrollbar {
+  scrollbar-color: var(--line-strong) transparent;
+  scrollbar-width: thin;
+}
+
+.case-assistant-panel {
+  top: 8px !important;
+  right: 8px !important;
+  left: auto !important;
+  translate: none !important;
+  transform: none;
+  transform-origin: center;
+  animation: assistant-panel-open 260ms cubic-bezier(0.23, 1, 0.32, 1) both !important;
+}
+
+.case-assistant-panel[data-state="closed"] {
+  animation: assistant-panel-close 170ms ease-in both !important;
+}
+
+@media (min-width: 640px) {
+  .case-assistant-panel {
+    top: 16px !important;
+    right: 16px !important;
+  }
+}
+
+@keyframes assistant-panel-open {
+  from {
+    opacity: 0;
+    transform: translate(var(--assistant-enter-x, 0px), var(--assistant-enter-y, 0px)) scale(0.18);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes assistant-panel-close {
+  from {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(var(--assistant-enter-x, 0px), var(--assistant-enter-y, 0px)) scale(0.18);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-assistant-panel {
+    animation: assistant-panel-fade 150ms ease both !important;
+  }
+
+  .case-assistant-panel[data-state="closed"] {
+    animation: assistant-panel-fade-out 120ms ease both !important;
+  }
+
+  .case-assistant-panel [style*="animation"] {
+    animation: none !important;
+  }
+
+  .case-assistant-panel [data-slot="message-scroller-button"] {
+    transition: opacity 150ms ease !important;
+    transform: none !important;
+  }
+}
+
+@keyframes assistant-panel-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes assistant-panel-fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}

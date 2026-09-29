@@ -1,0 +1,9 @@
+{
+  "http_status": 500,
+  "ok": false,
+  "body": {
+    "detail": "{\"message\":\"Error running graph: Error building Component Validate Public Research Contribution: \\n\\nPublic Research contribution differs from the deterministically scoped evidence and claim assessment\",\"traceback\":null,\"description\":null,\"code\":null,\"suggestion\":null}"
+  },
+  "attempt": 1,
+  "parse_error": null
+}

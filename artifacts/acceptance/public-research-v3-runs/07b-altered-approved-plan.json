@@ -1,0 +1,9 @@
+{
+  "http_status": 500,
+  "ok": false,
+  "body": {
+    "detail": "{\"message\":\"Error running graph: Error building Component Scope Public Research Operation: \\n\\nSupplied approved_plan differs from the exact approved query, domain, disclosure, result-limit, or claim scope\",\"traceback\":null,\"description\":null,\"code\":null,\"suggestion\":null}"
+  },
+  "attempt": 1,
+  "parse_error": null
+}

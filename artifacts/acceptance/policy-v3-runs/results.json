@@ -1,0 +1,75 @@
+{
+  "flow_id": "623b5639-b4be-4e2e-bba3-65e5a3158a6d",
+  "verified_at": "2026-09-20T19:03:58.697Z",
+  "canvas_connection": {
+    "result": "PASS",
+    "source_output": "response",
+    "target": "CustomComponent-PolicyStructuredOutputV3"
+  },
+  "scenarios": {
+    "context_changes_retrieval": {
+      "result": "PASS",
+      "domestic": [
+        "KYB-BASE-2"
+      ],
+      "marketplace": [
+        "KYB-BASE-2",
+        "MRKT-CB-1"
+      ]
+    },
+    "inapplicable_excluded": {
+      "result": "PASS",
+      "domestic": [
+        "KYB-BASE-2"
+      ]
+    },
+    "superseded_excluded": {
+      "result": "PASS",
+      "exclusions": [
+        {
+          "policy_version_id": "81000000-0000-0000-0000-000000000011",
+          "policy_code": "V3BASE",
+          "version": "1.0",
+          "reason": "superseded"
+        }
+      ]
+    },
+    "unsupported_exception_unresolved": {
+      "result": "PASS",
+      "status": "unsupported",
+      "exception_status": "unresolved"
+    },
+    "conflict_explicit": {
+      "result": "PASS",
+      "conflicts": [
+        {
+          "requirement_code": "MRKT-CONFLICT-1",
+          "reason": "Multiple applicable pinned policy passages conflict and no documented precedence exists.",
+          "policy_citation_ids": [
+            "policy-91000000-0000-0000-0000-000000000015",
+            "policy-91000000-0000-0000-0000-000000000016"
+          ],
+          "descriptions": [
+            "Seller screening must be performed monthly.",
+            "Seller screening must be performed quarterly."
+          ]
+        }
+      ]
+    },
+    "missing_evidence_gap": {
+      "result": "PASS",
+      "gaps": [
+        "Missing required evidence: incorporation_record"
+      ]
+    },
+    "cross_case_run_rejected": {
+      "result": "PASS",
+      "http_status": 500
+    },
+    "fabricated_or_altered_citation_rejected": {
+      "result": "PASS",
+      "injection_guard_status": 200,
+      "direct_validator_test": "tests/policy-validator-tamper.py"
+    }
+  }
+}

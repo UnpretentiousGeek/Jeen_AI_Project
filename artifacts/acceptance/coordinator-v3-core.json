@@ -1,0 +1,2736 @@
+{
+  "generated_at": "2026-09-20T20:40:24.002Z",
+  "flow_id": "145140c9-ffae-4a7d-94ae-e9533734347a",
+  "stages": [
+    {
+      "at": "2026-09-20T20:40:24.041Z",
+      "event": "started",
+      "scenario": "complete",
+      "job_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+      "flow_id": "145140c9-ffae-4a7d-94ae-e9533734347a",
+      "object": "job",
+      "created_timestamp": "2026-09-20T20:40:24.037491+00:00",
+      "status": "queued",
+      "links": {
+        "status": "/api/v2/workflows?job_id=33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "events": "/api/v2/workflows/33ea4944-59f8-45ae-aaa9-18c6fd27f743/events",
+        "stop": "/api/v2/workflows/stop"
+      },
+      "errors": [],
+      "globals": {}
+    },
+    {
+      "at": "2026-09-20T20:40:36.159Z",
+      "event": "status",
+      "job_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+      "status": "suspended",
+      "errors": [],
+      "output": null
+    },
+    {
+      "at": "2026-09-20T20:40:36.199Z",
+      "event": "resumed",
+      "job_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+      "request_id": "HumanInput-AnalystApproval:33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+      "action_id": "approve",
+      "values": {
+        "analyst": "coordinator-v3-acceptance"
+      },
+      "response": {
+        "job_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "status": "resuming",
+        "message": "Resume accepted"
+      }
+    },
+    {
+      "at": "2026-09-20T20:40:37.742Z",
+      "event": "status",
+      "job_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+      "status": "completed",
+      "errors": [],
+      "output": {
+        "reason": "single",
+        "text": "",
+        "source": "ChatOutput-CoordinatorV3"
+      }
+    },
+    {
+      "at": "2026-09-20T20:40:37.764Z",
+      "event": "started",
+      "scenario": "complete",
+      "job_id": "35a61193-2d26-4310-8180-673b4d5da5f2",
+      "flow_id": "145140c9-ffae-4a7d-94ae-e9533734347a",
+      "object": "job",
+      "created_timestamp": "2026-09-20T20:40:37.762975+00:00",
+      "status": "queued",
+      "links": {
+        "status": "/api/v2/workflows?job_id=35a61193-2d26-4310-8180-673b4d5da5f2",
+        "events": "/api/v2/workflows/35a61193-2d26-4310-8180-673b4d5da5f2/events",
+        "stop": "/api/v2/workflows/stop"
+      },
+      "errors": [],
+      "globals": {}
+    },
+    {
+      "at": "2026-09-20T20:40:50.335Z",
+      "event": "status",
+      "job_id": "35a61193-2d26-4310-8180-673b4d5da5f2",
+      "status": "suspended",
+      "errors": [],
+      "output": null
+    },
+    {
+      "at": "2026-09-20T20:40:50.363Z",
+      "event": "resumed",
+      "job_id": "35a61193-2d26-4310-8180-673b4d5da5f2",
+      "request_id": "HumanInput-AnalystApproval:35a61193-2d26-4310-8180-673b4d5da5f2",
+      "action_id": "reject",
+      "values": {
+        "rationale": "Analyst rejects proposed action."
+      },
+      "response": {
+        "job_id": "35a61193-2d26-4310-8180-673b4d5da5f2",
+        "status": "resuming",
+        "message": "Resume accepted"
+      }
+    },
+    {
+      "at": "2026-09-20T20:40:51.898Z",
+      "event": "status",
+      "job_id": "35a61193-2d26-4310-8180-673b4d5da5f2",
+      "status": "completed",
+      "errors": [],
+      "output": {
+        "reason": "single",
+        "text": "",
+        "source": "ChatOutput-CoordinatorV3"
+      }
+    },
+    {
+      "at": "2026-09-20T20:40:51.921Z",
+      "event": "started",
+      "scenario": "complete",
+      "job_id": "776757ab-7ecd-482e-9192-c270a3d1f648",
+      "flow_id": "145140c9-ffae-4a7d-94ae-e9533734347a",
+      "object": "job",
+      "created_timestamp": "2026-09-20T20:40:51.919381+00:00",
+      "status": "queued",
+      "links": {
+        "status": "/api/v2/workflows?job_id=776757ab-7ecd-482e-9192-c270a3d1f648",
+        "events": "/api/v2/workflows/776757ab-7ecd-482e-9192-c270a3d1f648/events",
+        "stop": "/api/v2/workflows/stop"
+      },
+      "errors": [],
+      "globals": {}
+    },
+    {
+      "at": "2026-09-20T20:41:04.132Z",
+      "event": "status",
+      "job_id": "776757ab-7ecd-482e-9192-c270a3d1f648",
+      "status": "suspended",
+      "errors": [],
+      "output": null
+    },
+    {
+      "at": "2026-09-20T20:41:06.164Z",
+      "event": "started",
+      "scenario": "complete",
+      "job_id": "7699ef51-b640-4994-912f-925e2f8861db",
+      "flow_id": "145140c9-ffae-4a7d-94ae-e9533734347a",
+      "object": "job",
+      "created_timestamp": "2026-09-20T20:41:06.162248+00:00",
+      "status": "queued",
+      "links": {
+        "status": "/api/v2/workflows?job_id=7699ef51-b640-4994-912f-925e2f8861db",
+        "events": "/api/v2/workflows/7699ef51-b640-4994-912f-925e2f8861db/events",
+        "stop": "/api/v2/workflows/stop"
+      },
+      "errors": [],
+      "globals": {}
+    },
+    {
+      "at": "2026-09-20T20:41:18.275Z",
+      "event": "status",
+      "job_id": "7699ef51-b640-4994-912f-925e2f8861db",
+      "status": "suspended",
+      "errors": [],
+      "output": null
+    },
+    {
+      "at": "2026-09-20T20:41:18.315Z",
+      "event": "resumed",
+      "job_id": "7699ef51-b640-4994-912f-925e2f8861db",
+      "request_id": "HumanInput-AnalystApproval:7699ef51-b640-4994-912f-925e2f8861db",
+      "action_id": "approve",
+      "values": {
+        "proposed_action": {
+          "action_type": "mark_ready_for_review",
+          "summary": "ALTERED"
+        }
+      },
+      "response": {
+        "job_id": "7699ef51-b640-4994-912f-925e2f8861db",
+        "status": "resuming",
+        "message": "Resume accepted"
+      }
+    },
+    {
+      "at": "2026-09-20T20:41:22.173Z",
+      "event": "status",
+      "job_id": "7699ef51-b640-4994-912f-925e2f8861db",
+      "status": "failed",
+      "errors": [],
+      "output": null
+    }
+  ],
+  "isolation": {
+    "jobs": [
+      "ee973f17-df3b-4be9-88c7-b42ce4b159db",
+      "7f68fff4-6fd4-49da-be14-b65c79d00306"
+    ],
+    "started_together": true,
+    "created_at": "2026-09-20T20:35:50Z"
+  },
+  "idempotency": {
+    "before": 1,
+    "after": 1,
+    "duplicate_suppressed": true
+  },
+  "rejection_guards": {
+    "rejected": {
+      "before": 1,
+      "after": 1,
+      "no_action": true
+    },
+    "missing": {
+      "before": 1,
+      "after": 1,
+      "job_status": "suspended",
+      "no_action": true
+    },
+    "altered": {
+      "before": 1,
+      "after": 1,
+      "job_status": "failed",
+      "no_action": true
+    }
+  },
+  "jobs": {
+    "conflict": "ee973f17-df3b-4be9-88c7-b42ce4b159db",
+    "required_failure": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+    "interrupted": "24a129c0-bd03-4928-bcb9-90c87482838b",
+    "idempotency": "33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+    "rejected": "35a61193-2d26-4310-8180-673b4d5da5f2",
+    "missing": "776757ab-7ecd-482e-9192-c270a3d1f648",
+    "altered": "7699ef51-b640-4994-912f-925e2f8861db"
+  },
+  "database": {
+    "runs": [
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000053",
+        "case_id": "32000000-0000-0000-0000-000000000053",
+        "langflow_job_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "session_id": "coord-v3-conflict-isolation-a-1789936550859",
+        "scenario": "conflict",
+        "state": {
+          "request": {
+            "case_id": "32000000-0000-0000-0000-000000000053",
+            "scenario": "conflict",
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000053"
+          },
+          "immutable_context": {
+            "case_id": "32000000-0000-0000-0000-000000000053",
+            "case_snapshot": {
+              "applicant": {
+                "id": "12000000-0000-0000-0000-000000000053",
+                "product": "cross_border_payouts",
+                "legal_name": "Coordinator Conflict Ltd",
+                "jurisdiction": "GB",
+                "business_type": "marketplace"
+              },
+              "application_id": "22000000-0000-0000-0000-000000000053",
+              "case_reference": "KYB-COORD-V3-53",
+              "submitted_payload": {
+                "fixture": "coordinator_conflict",
+                "entity_declaration": {
+                  "addresses": {
+                    "mailing": "53 King Street, London",
+                    "operating": "53 King Street, London",
+                    "registered": "53 King Street, London"
+                  },
+                  "legal_name": "Coordinator Conflict Ltd",
+                  "identifiers": [
+                    {
+                      "type": "registration_number",
+                      "value": "GB-COORD-53",
+                      "jurisdiction": "GB"
+                    }
+                  ],
+                  "jurisdiction": "GB"
+                }
+              }
+            },
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000053",
+            "policy_effective_on": "2026-09-20"
+          },
+          "coordinator_summary": {
+            "route": "CONFLICT",
+            "case_id": "32000000-0000-0000-0000-000000000053",
+            "findings": [
+              {
+                "status": "partial",
+                "specialty": "entity",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000053"
+                ]
+              },
+              {
+                "status": "completed",
+                "specialty": "ownership",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000053"
+                ]
+              },
+              {
+                "status": "completed",
+                "specialty": "policy",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000053-10",
+                  "case-62000000-0000-0000-0000-000000000053-11",
+                  "case-62000000-0000-0000-0000-000000000053-12",
+                  "case-62000000-0000-0000-0000-000000000053-13",
+                  "case-62000000-0000-0000-0000-000000000053-14",
+                  "policy-91000000-0000-0000-0000-000000000012",
+                  "policy-91000000-0000-0000-0000-000000000013"
+                ]
+              }
+            ],
+            "conflicts": [],
+            "concurrency": {
+              "overlap_proven": true,
+              "latest_start_before_earliest_completion": true
+            },
+            "evidence_gaps": [],
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000053",
+            "proposed_action": null,
+            "review_decision": null,
+            "contract_version": "3.4.0",
+            "proposed_next_steps": [
+              "Route through the explicit human checkpoint for this state."
+            ],
+            "contribution_provenance": [
+              {
+                "agent": {
+                  "name": "kyb-entity-agent",
+                  "version": "3.1.0"
+                },
+                "task_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db:entity:a1",
+                "specialty": "entity",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000053:entity:ee973f17-df3b-4be9-88c7-b42ce4b159db"
+              },
+              {
+                "agent": {
+                  "name": "kyb-ownership-agent",
+                  "version": "3.1.0"
+                },
+                "task_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db:ownership:a1",
+                "specialty": "ownership",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000053:ownership:ee973f17-df3b-4be9-88c7-b42ce4b159db"
+              },
+              {
+                "agent": {
+                  "name": "kyb-policy-agent",
+                  "version": "3.2.0"
+                },
+                "task_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db:policy:a1",
+                "specialty": "policy",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000053:policy:ee973f17-df3b-4be9-88c7-b42ce4b159db"
+              }
+            ]
+          }
+        },
+        "created_at": "2026-09-20T20:35:51.400Z",
+        "updated_at": "2026-09-20T20:36:01.263Z"
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+        "case_id": "32000000-0000-0000-0000-000000000054",
+        "langflow_job_id": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "session_id": "coord-v3-required_failure-isolation-b-1789936550859",
+        "scenario": "required_failure",
+        "state": {
+          "request": {
+            "case_id": "32000000-0000-0000-0000-000000000054",
+            "scenario": "required_failure",
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000054"
+          },
+          "immutable_context": {
+            "case_id": "32000000-0000-0000-0000-000000000054",
+            "case_snapshot": {
+              "applicant": {
+                "id": "12000000-0000-0000-0000-000000000054",
+                "product": "domestic_payments",
+                "legal_name": "Coordinator Recovery LLC",
+                "jurisdiction": "US-DE",
+                "business_type": "software"
+              },
+              "application_id": "22000000-0000-0000-0000-000000000054",
+              "case_reference": "KYB-COORD-V3-54",
+              "submitted_payload": {
+                "fixture": "coordinator_required_failure",
+                "entity_declaration": {
+                  "addresses": {
+                    "mailing": "54 Recovery Way, Wilmington, DE",
+                    "operating": "54 Recovery Way, Wilmington, DE",
+                    "registered": "54 Recovery Way, Wilmington, DE"
+                  },
+                  "legal_name": "Coordinator Recovery LLC",
+                  "identifiers": [
+                    {
+                      "type": "registration_number",
+                      "value": "DE-COORD-54",
+                      "jurisdiction": "US-DE"
+                    }
+                  ],
+                  "jurisdiction": "US-DE"
+                }
+              }
+            },
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+            "policy_effective_on": "2026-09-20"
+          },
+          "coordinator_summary": {
+            "route": "FAILURE",
+            "case_id": "32000000-0000-0000-0000-000000000054",
+            "findings": [
+              {
+                "status": "completed",
+                "specialty": "entity",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000054"
+                ]
+              },
+              {
+                "status": "completed",
+                "specialty": "ownership",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000054"
+                ]
+              },
+              {
+                "status": "failed",
+                "specialty": "policy",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000054-9",
+                  "policy-91000000-0000-0000-0000-000000000012"
+                ]
+              }
+            ],
+            "conflicts": [],
+            "concurrency": {
+              "overlap_proven": true,
+              "latest_start_before_earliest_completion": true
+            },
+            "evidence_gaps": [],
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+            "proposed_action": null,
+            "review_decision": null,
+            "contract_version": "3.4.0",
+            "proposed_next_steps": [
+              "Route through the explicit human checkpoint for this state."
+            ],
+            "contribution_provenance": [
+              {
+                "agent": {
+                  "name": "kyb-entity-agent",
+                  "version": "3.1.0"
+                },
+                "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:entity:a1",
+                "specialty": "entity",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000054:entity:7f68fff4-6fd4-49da-be14-b65c79d00306"
+              },
+              {
+                "agent": {
+                  "name": "kyb-ownership-agent",
+                  "version": "3.1.0"
+                },
+                "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:ownership:a1",
+                "specialty": "ownership",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000054:ownership:7f68fff4-6fd4-49da-be14-b65c79d00306"
+              },
+              {
+                "agent": {
+                  "name": "kyb-policy-agent",
+                  "version": "3.2.0"
+                },
+                "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:policy:a1",
+                "specialty": "policy",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000054:policy:7f68fff4-6fd4-49da-be14-b65c79d00306"
+              }
+            ]
+          }
+        },
+        "created_at": "2026-09-20T20:35:51.904Z",
+        "updated_at": "2026-09-20T20:35:59.801Z"
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+        "case_id": "32000000-0000-0000-0000-000000000052",
+        "langflow_job_id": "24a129c0-bd03-4928-bcb9-90c87482838b",
+        "session_id": "coord-v3-interrupted-selective-1789936550859-attempt-1",
+        "scenario": "interrupted",
+        "state": {
+          "request": {
+            "case_id": "32000000-0000-0000-0000-000000000052",
+            "scenario": "interrupted",
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000052"
+          },
+          "immutable_context": {
+            "case_id": "32000000-0000-0000-0000-000000000052",
+            "case_snapshot": {
+              "applicant": {
+                "id": "12000000-0000-0000-0000-000000000052",
+                "product": "cross_border_payouts",
+                "legal_name": "Coordinator Interrupted Ltd",
+                "jurisdiction": "GB",
+                "business_type": "marketplace"
+              },
+              "application_id": "22000000-0000-0000-0000-000000000052",
+              "case_reference": "KYB-COORD-V3-52",
+              "submitted_payload": {
+                "fixture": "coordinator_interrupted",
+                "entity_declaration": {
+                  "addresses": {
+                    "mailing": "52 Threadneedle Street, London",
+                    "operating": "52 Threadneedle Street, London",
+                    "registered": "52 Threadneedle Street, London"
+                  },
+                  "legal_name": "Coordinator Interrupted Ltd",
+                  "identifiers": [
+                    {
+                      "type": "registration_number",
+                      "value": "GB-COORD-52",
+                      "jurisdiction": "GB"
+                    }
+                  ],
+                  "jurisdiction": "GB"
+                }
+              }
+            },
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+            "policy_effective_on": "2026-09-20"
+          },
+          "coordinator_summary": {
+            "route": "INFO",
+            "case_id": "32000000-0000-0000-0000-000000000052",
+            "findings": [
+              {
+                "status": "completed",
+                "specialty": "entity",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000052"
+                ]
+              },
+              {
+                "status": "partial",
+                "specialty": "ownership",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000052"
+                ]
+              },
+              {
+                "status": "completed",
+                "specialty": "policy",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000052-10",
+                  "case-62000000-0000-0000-0000-000000000052-11",
+                  "case-62000000-0000-0000-0000-000000000052-12",
+                  "case-62000000-0000-0000-0000-000000000052-13",
+                  "case-62000000-0000-0000-0000-000000000052-9",
+                  "policy-91000000-0000-0000-0000-000000000012",
+                  "policy-91000000-0000-0000-0000-000000000013"
+                ]
+              }
+            ],
+            "conflicts": [],
+            "concurrency": {
+              "overlap_proven": true,
+              "latest_start_before_earliest_completion": true
+            },
+            "evidence_gaps": [],
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+            "proposed_action": null,
+            "review_decision": null,
+            "contract_version": "3.4.0",
+            "proposed_next_steps": [
+              "Request targeted evidence"
+            ],
+            "contribution_provenance": [
+              {
+                "agent": {
+                  "name": "kyb-entity-agent",
+                  "version": "3.1.0"
+                },
+                "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:entity:a1",
+                "specialty": "entity",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000052:entity:24a129c0-bd03-4928-bcb9-90c87482838b"
+              },
+              {
+                "agent": {
+                  "name": "kyb-ownership-agent",
+                  "version": "3.1.0"
+                },
+                "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:ownership:a1",
+                "specialty": "ownership",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000052:ownership:24a129c0-bd03-4928-bcb9-90c87482838b"
+              },
+              {
+                "agent": {
+                  "name": "kyb-policy-agent",
+                  "version": "3.2.0"
+                },
+                "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:policy:a1",
+                "specialty": "policy",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000052:policy:24a129c0-bd03-4928-bcb9-90c87482838b"
+              }
+            ]
+          }
+        },
+        "created_at": "2026-09-20T20:36:13.363Z",
+        "updated_at": "2026-09-20T20:36:21.054Z"
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "session_id": "coord-v3-complete-idempotency-guard-1789936824002",
+        "scenario": "complete",
+        "state": {
+          "request": {
+            "case_id": "32000000-0000-0000-0000-000000000051",
+            "scenario": "complete",
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000051"
+          },
+          "immutable_context": {
+            "case_id": "32000000-0000-0000-0000-000000000051",
+            "case_snapshot": {
+              "applicant": {
+                "id": "12000000-0000-0000-0000-000000000051",
+                "product": "domestic_payments",
+                "legal_name": "Coordinator Complete LLC",
+                "jurisdiction": "US-CA",
+                "business_type": "software"
+              },
+              "application_id": "22000000-0000-0000-0000-000000000051",
+              "case_reference": "KYB-COORD-V3-51",
+              "submitted_payload": {
+                "fixture": "coordinator_complete",
+                "entity_declaration": {
+                  "addresses": {
+                    "mailing": "51 Market Street, San Francisco, CA",
+                    "operating": "51 Market Street, San Francisco, CA",
+                    "registered": "51 Market Street, San Francisco, CA"
+                  },
+                  "legal_name": "Coordinator Complete LLC",
+                  "identifiers": [
+                    {
+                      "type": "registration_number",
+                      "value": "CA-COORD-51",
+                      "jurisdiction": "US-CA"
+                    }
+                  ],
+                  "jurisdiction": "US-CA"
+                }
+              }
+            },
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+            "policy_effective_on": "2026-09-20"
+          },
+          "coordinator_summary": {
+            "route": "ACTION",
+            "case_id": "32000000-0000-0000-0000-000000000051",
+            "findings": [
+              {
+                "status": "completed",
+                "specialty": "entity",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000051"
+                ]
+              },
+              {
+                "status": "completed",
+                "specialty": "ownership",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000051"
+                ]
+              },
+              {
+                "status": "completed",
+                "specialty": "policy",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000051-9",
+                  "policy-91000000-0000-0000-0000-000000000012"
+                ]
+              }
+            ],
+            "conflicts": [],
+            "concurrency": {
+              "overlap_proven": true,
+              "latest_start_before_earliest_completion": true
+            },
+            "evidence_gaps": [],
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+            "proposed_action": {
+              "summary": "Record the validated KYB analysis as ready for analyst review.",
+              "action_type": "mark_ready_for_review"
+            },
+            "review_decision": null,
+            "contract_version": "3.4.0",
+            "proposed_next_steps": [
+              "Route through the explicit human checkpoint for this state."
+            ],
+            "contribution_provenance": [
+              {
+                "agent": {
+                  "name": "kyb-entity-agent",
+                  "version": "3.1.0"
+                },
+                "task_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743:entity:a1",
+                "specialty": "entity",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000051:entity:33ea4944-59f8-45ae-aaa9-18c6fd27f743"
+              },
+              {
+                "agent": {
+                  "name": "kyb-ownership-agent",
+                  "version": "3.1.0"
+                },
+                "task_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743:ownership:a1",
+                "specialty": "ownership",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000051:ownership:33ea4944-59f8-45ae-aaa9-18c6fd27f743"
+              },
+              {
+                "agent": {
+                  "name": "kyb-policy-agent",
+                  "version": "3.2.0"
+                },
+                "task_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743:policy:a1",
+                "specialty": "policy",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000051:policy:33ea4944-59f8-45ae-aaa9-18c6fd27f743"
+              }
+            ]
+          }
+        },
+        "created_at": "2026-09-20T20:40:24.544Z",
+        "updated_at": "2026-09-20T20:40:31.741Z"
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "35a61193-2d26-4310-8180-673b4d5da5f2",
+        "session_id": "coord-v3-complete-rejected-guard-1789936824002",
+        "scenario": "complete",
+        "state": {
+          "request": {
+            "case_id": "32000000-0000-0000-0000-000000000051",
+            "scenario": "complete",
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000051"
+          },
+          "immutable_context": {
+            "case_id": "32000000-0000-0000-0000-000000000051",
+            "case_snapshot": {
+              "applicant": {
+                "id": "12000000-0000-0000-0000-000000000051",
+                "product": "domestic_payments",
+                "legal_name": "Coordinator Complete LLC",
+                "jurisdiction": "US-CA",
+                "business_type": "software"
+              },
+              "application_id": "22000000-0000-0000-0000-000000000051",
+              "case_reference": "KYB-COORD-V3-51",
+              "submitted_payload": {
+                "fixture": "coordinator_complete",
+                "entity_declaration": {
+                  "addresses": {
+                    "mailing": "51 Market Street, San Francisco, CA",
+                    "operating": "51 Market Street, San Francisco, CA",
+                    "registered": "51 Market Street, San Francisco, CA"
+                  },
+                  "legal_name": "Coordinator Complete LLC",
+                  "identifiers": [
+                    {
+                      "type": "registration_number",
+                      "value": "CA-COORD-51",
+                      "jurisdiction": "US-CA"
+                    }
+                  ],
+                  "jurisdiction": "US-CA"
+                }
+              }
+            },
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+            "policy_effective_on": "2026-09-20"
+          },
+          "coordinator_summary": {
+            "route": "ACTION",
+            "case_id": "32000000-0000-0000-0000-000000000051",
+            "findings": [
+              {
+                "status": "completed",
+                "specialty": "entity",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000051"
+                ]
+              },
+              {
+                "status": "completed",
+                "specialty": "ownership",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000051"
+                ]
+              },
+              {
+                "status": "completed",
+                "specialty": "policy",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000051-9",
+                  "policy-91000000-0000-0000-0000-000000000012"
+                ]
+              }
+            ],
+            "conflicts": [],
+            "concurrency": {
+              "overlap_proven": true,
+              "latest_start_before_earliest_completion": true
+            },
+            "evidence_gaps": [],
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+            "proposed_action": {
+              "summary": "Record the validated KYB analysis as ready for analyst review.",
+              "action_type": "mark_ready_for_review"
+            },
+            "review_decision": null,
+            "contract_version": "3.4.0",
+            "proposed_next_steps": [
+              "Route through the explicit human checkpoint for this state."
+            ],
+            "contribution_provenance": [
+              {
+                "agent": {
+                  "name": "kyb-entity-agent",
+                  "version": "3.1.0"
+                },
+                "task_id": "35a61193-2d26-4310-8180-673b4d5da5f2:entity:a1",
+                "specialty": "entity",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000051:entity:35a61193-2d26-4310-8180-673b4d5da5f2"
+              },
+              {
+                "agent": {
+                  "name": "kyb-ownership-agent",
+                  "version": "3.1.0"
+                },
+                "task_id": "35a61193-2d26-4310-8180-673b4d5da5f2:ownership:a1",
+                "specialty": "ownership",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000051:ownership:35a61193-2d26-4310-8180-673b4d5da5f2"
+              },
+              {
+                "agent": {
+                  "name": "kyb-policy-agent",
+                  "version": "3.2.0"
+                },
+                "task_id": "35a61193-2d26-4310-8180-673b4d5da5f2:policy:a1",
+                "specialty": "policy",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000051:policy:35a61193-2d26-4310-8180-673b4d5da5f2"
+              }
+            ]
+          }
+        },
+        "created_at": "2026-09-20T20:40:38.251Z",
+        "updated_at": "2026-09-20T20:40:45.749Z"
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "776757ab-7ecd-482e-9192-c270a3d1f648",
+        "session_id": "coord-v3-complete-missing-guard-1789936824002",
+        "scenario": "complete",
+        "state": {
+          "request": {
+            "case_id": "32000000-0000-0000-0000-000000000051",
+            "scenario": "complete",
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000051"
+          },
+          "immutable_context": {
+            "case_id": "32000000-0000-0000-0000-000000000051",
+            "case_snapshot": {
+              "applicant": {
+                "id": "12000000-0000-0000-0000-000000000051",
+                "product": "domestic_payments",
+                "legal_name": "Coordinator Complete LLC",
+                "jurisdiction": "US-CA",
+                "business_type": "software"
+              },
+              "application_id": "22000000-0000-0000-0000-000000000051",
+              "case_reference": "KYB-COORD-V3-51",
+              "submitted_payload": {
+                "fixture": "coordinator_complete",
+                "entity_declaration": {
+                  "addresses": {
+                    "mailing": "51 Market Street, San Francisco, CA",
+                    "operating": "51 Market Street, San Francisco, CA",
+                    "registered": "51 Market Street, San Francisco, CA"
+                  },
+                  "legal_name": "Coordinator Complete LLC",
+                  "identifiers": [
+                    {
+                      "type": "registration_number",
+                      "value": "CA-COORD-51",
+                      "jurisdiction": "US-CA"
+                    }
+                  ],
+                  "jurisdiction": "US-CA"
+                }
+              }
+            },
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+            "policy_effective_on": "2026-09-20"
+          },
+          "coordinator_summary": {
+            "route": "ACTION",
+            "case_id": "32000000-0000-0000-0000-000000000051",
+            "findings": [
+              {
+                "status": "completed",
+                "specialty": "entity",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000051"
+                ]
+              },
+              {
+                "status": "completed",
+                "specialty": "ownership",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000051"
+                ]
+              },
+              {
+                "status": "completed",
+                "specialty": "policy",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000051-9",
+                  "policy-91000000-0000-0000-0000-000000000012"
+                ]
+              }
+            ],
+            "conflicts": [],
+            "concurrency": {
+              "overlap_proven": true,
+              "latest_start_before_earliest_completion": true
+            },
+            "evidence_gaps": [],
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+            "proposed_action": {
+              "summary": "Record the validated KYB analysis as ready for analyst review.",
+              "action_type": "mark_ready_for_review"
+            },
+            "review_decision": null,
+            "contract_version": "3.4.0",
+            "proposed_next_steps": [
+              "Route through the explicit human checkpoint for this state."
+            ],
+            "contribution_provenance": [
+              {
+                "agent": {
+                  "name": "kyb-entity-agent",
+                  "version": "3.1.0"
+                },
+                "task_id": "776757ab-7ecd-482e-9192-c270a3d1f648:entity:a1",
+                "specialty": "entity",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000051:entity:776757ab-7ecd-482e-9192-c270a3d1f648"
+              },
+              {
+                "agent": {
+                  "name": "kyb-ownership-agent",
+                  "version": "3.1.0"
+                },
+                "task_id": "776757ab-7ecd-482e-9192-c270a3d1f648:ownership:a1",
+                "specialty": "ownership",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000051:ownership:776757ab-7ecd-482e-9192-c270a3d1f648"
+              },
+              {
+                "agent": {
+                  "name": "kyb-policy-agent",
+                  "version": "3.2.0"
+                },
+                "task_id": "776757ab-7ecd-482e-9192-c270a3d1f648:policy:a1",
+                "specialty": "policy",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000051:policy:776757ab-7ecd-482e-9192-c270a3d1f648"
+              }
+            ]
+          }
+        },
+        "created_at": "2026-09-20T20:40:52.391Z",
+        "updated_at": "2026-09-20T20:40:59.557Z"
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "7699ef51-b640-4994-912f-925e2f8861db",
+        "session_id": "coord-v3-complete-altered-guard-1789936824002",
+        "scenario": "complete",
+        "state": {
+          "request": {
+            "case_id": "32000000-0000-0000-0000-000000000051",
+            "scenario": "complete",
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000051"
+          },
+          "immutable_context": {
+            "case_id": "32000000-0000-0000-0000-000000000051",
+            "case_snapshot": {
+              "applicant": {
+                "id": "12000000-0000-0000-0000-000000000051",
+                "product": "domestic_payments",
+                "legal_name": "Coordinator Complete LLC",
+                "jurisdiction": "US-CA",
+                "business_type": "software"
+              },
+              "application_id": "22000000-0000-0000-0000-000000000051",
+              "case_reference": "KYB-COORD-V3-51",
+              "submitted_payload": {
+                "fixture": "coordinator_complete",
+                "entity_declaration": {
+                  "addresses": {
+                    "mailing": "51 Market Street, San Francisco, CA",
+                    "operating": "51 Market Street, San Francisco, CA",
+                    "registered": "51 Market Street, San Francisco, CA"
+                  },
+                  "legal_name": "Coordinator Complete LLC",
+                  "identifiers": [
+                    {
+                      "type": "registration_number",
+                      "value": "CA-COORD-51",
+                      "jurisdiction": "US-CA"
+                    }
+                  ],
+                  "jurisdiction": "US-CA"
+                }
+              }
+            },
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+            "policy_effective_on": "2026-09-20"
+          },
+          "coordinator_summary": {
+            "route": "ACTION",
+            "case_id": "32000000-0000-0000-0000-000000000051",
+            "findings": [
+              {
+                "status": "completed",
+                "specialty": "entity",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000051"
+                ]
+              },
+              {
+                "status": "completed",
+                "specialty": "ownership",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000051"
+                ]
+              },
+              {
+                "status": "completed",
+                "specialty": "policy",
+                "citation_ids": [
+                  "case-62000000-0000-0000-0000-000000000051-9",
+                  "policy-91000000-0000-0000-0000-000000000012"
+                ]
+              }
+            ],
+            "conflicts": [],
+            "concurrency": {
+              "overlap_proven": true,
+              "latest_start_before_earliest_completion": true
+            },
+            "evidence_gaps": [],
+            "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+            "proposed_action": {
+              "summary": "Record the validated KYB analysis as ready for analyst review.",
+              "action_type": "mark_ready_for_review"
+            },
+            "review_decision": null,
+            "contract_version": "3.4.0",
+            "proposed_next_steps": [
+              "Route through the explicit human checkpoint for this state."
+            ],
+            "contribution_provenance": [
+              {
+                "agent": {
+                  "name": "kyb-entity-agent",
+                  "version": "3.1.0"
+                },
+                "task_id": "7699ef51-b640-4994-912f-925e2f8861db:entity:a1",
+                "specialty": "entity",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000051:entity:7699ef51-b640-4994-912f-925e2f8861db"
+              },
+              {
+                "agent": {
+                  "name": "kyb-ownership-agent",
+                  "version": "3.1.0"
+                },
+                "task_id": "7699ef51-b640-4994-912f-925e2f8861db:ownership:a1",
+                "specialty": "ownership",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000051:ownership:7699ef51-b640-4994-912f-925e2f8861db"
+              },
+              {
+                "agent": {
+                  "name": "kyb-policy-agent",
+                  "version": "3.2.0"
+                },
+                "task_id": "7699ef51-b640-4994-912f-925e2f8861db:policy:a1",
+                "specialty": "policy",
+                "context_id": "ctx:a4000000-0000-4000-8000-000000000051:policy:7699ef51-b640-4994-912f-925e2f8861db"
+              }
+            ]
+          }
+        },
+        "created_at": "2026-09-20T20:41:06.659Z",
+        "updated_at": "2026-09-20T20:41:14.410Z"
+      }
+    ],
+    "task_events": [
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000053",
+        "langflow_job_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "specialty": "policy",
+        "task_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000053:policy:ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:35:51.865Z",
+        "details": {
+          "flow_id": "623b5639-b4be-4e2e-bba3-65e5a3158a6d",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000053",
+        "langflow_job_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "specialty": "entity",
+        "task_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000053:entity:ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:35:51.878Z",
+        "details": {
+          "flow_id": "9db6e3bd-132a-4a7d-909d-d06ad94f550a",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000053",
+        "langflow_job_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "specialty": "ownership",
+        "task_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000053:ownership:ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:35:51.889Z",
+        "details": {
+          "flow_id": "9f248e41-f6f0-44d6-ad04-3ff1b09f1655",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+        "langflow_job_id": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "specialty": "entity",
+        "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000054:entity:7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:35:51.920Z",
+        "details": {
+          "flow_id": "9db6e3bd-132a-4a7d-909d-d06ad94f550a",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+        "langflow_job_id": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "specialty": "ownership",
+        "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000054:ownership:7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:35:51.930Z",
+        "details": {
+          "flow_id": "9f248e41-f6f0-44d6-ad04-3ff1b09f1655",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+        "langflow_job_id": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "specialty": "policy",
+        "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000054:policy:7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:35:51.941Z",
+        "details": {
+          "flow_id": "623b5639-b4be-4e2e-bba3-65e5a3158a6d",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000053",
+        "langflow_job_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "specialty": "policy",
+        "task_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000053:policy:ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:35:52.822Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.2.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+        "langflow_job_id": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "specialty": "policy",
+        "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000054:policy:7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "attempt": 1,
+        "event_type": "failed",
+        "occurred_at": "2026-09-20T20:35:52.902Z",
+        "details": {
+          "status": "failed",
+          "agent_version": "3.2.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+        "langflow_job_id": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "specialty": "ownership",
+        "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000054:ownership:7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:35:57.615Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.1.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000053",
+        "langflow_job_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "specialty": "ownership",
+        "task_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000053:ownership:ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:35:57.664Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.1.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+        "langflow_job_id": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "specialty": "entity",
+        "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000054:entity:7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:35:59.779Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.1.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000053",
+        "langflow_job_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "specialty": "entity",
+        "task_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000053:entity:ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:36:01.240Z",
+        "details": {
+          "status": "partial",
+          "agent_version": "3.1.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+        "langflow_job_id": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "specialty": "policy",
+        "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:policy:a2",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000054:policy:7f68fff4-6fd4-49da-be14-b65c79d00306:retry",
+        "attempt": 2,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:36:08.713Z",
+        "details": {
+          "retry": 2,
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+        "langflow_job_id": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "specialty": "policy",
+        "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:policy:a2",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000054:policy:7f68fff4-6fd4-49da-be14-b65c79d00306:retry",
+        "attempt": 2,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:36:08.800Z",
+        "details": {
+          "retry": 2,
+          "status": "completed"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+        "langflow_job_id": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "specialty": "entity",
+        "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000054:entity:7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "attempt": 2,
+        "event_type": "preserved",
+        "occurred_at": "2026-09-20T20:36:08.804Z",
+        "details": {
+          "reason": "unaffected contribution preserved"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+        "langflow_job_id": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "specialty": "ownership",
+        "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000054:ownership:7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "attempt": 2,
+        "event_type": "preserved",
+        "occurred_at": "2026-09-20T20:36:08.805Z",
+        "details": {
+          "reason": "unaffected contribution preserved"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+        "langflow_job_id": "24a129c0-bd03-4928-bcb9-90c87482838b",
+        "specialty": "ownership",
+        "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000052:ownership:24a129c0-bd03-4928-bcb9-90c87482838b",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:36:13.380Z",
+        "details": {
+          "flow_id": "9f248e41-f6f0-44d6-ad04-3ff1b09f1655",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+        "langflow_job_id": "24a129c0-bd03-4928-bcb9-90c87482838b",
+        "specialty": "entity",
+        "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000052:entity:24a129c0-bd03-4928-bcb9-90c87482838b",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:36:13.392Z",
+        "details": {
+          "flow_id": "9db6e3bd-132a-4a7d-909d-d06ad94f550a",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+        "langflow_job_id": "24a129c0-bd03-4928-bcb9-90c87482838b",
+        "specialty": "policy",
+        "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000052:policy:24a129c0-bd03-4928-bcb9-90c87482838b",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:36:13.403Z",
+        "details": {
+          "flow_id": "623b5639-b4be-4e2e-bba3-65e5a3158a6d",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+        "langflow_job_id": "24a129c0-bd03-4928-bcb9-90c87482838b",
+        "specialty": "policy",
+        "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000052:policy:24a129c0-bd03-4928-bcb9-90c87482838b",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:36:13.640Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.2.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+        "langflow_job_id": "24a129c0-bd03-4928-bcb9-90c87482838b",
+        "specialty": "ownership",
+        "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000052:ownership:24a129c0-bd03-4928-bcb9-90c87482838b",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:36:18.679Z",
+        "details": {
+          "status": "partial",
+          "agent_version": "3.1.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+        "langflow_job_id": "24a129c0-bd03-4928-bcb9-90c87482838b",
+        "specialty": "entity",
+        "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000052:entity:24a129c0-bd03-4928-bcb9-90c87482838b",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:36:21.032Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.1.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+        "langflow_job_id": "24a129c0-bd03-4928-bcb9-90c87482838b",
+        "specialty": "ownership",
+        "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:ownership:a2",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000052:ownership:24a129c0-bd03-4928-bcb9-90c87482838b:retry",
+        "attempt": 2,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:36:29.677Z",
+        "details": {
+          "retry": 2,
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+        "langflow_job_id": "24a129c0-bd03-4928-bcb9-90c87482838b",
+        "specialty": "ownership",
+        "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:ownership:a2",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000052:ownership:24a129c0-bd03-4928-bcb9-90c87482838b:retry",
+        "attempt": 2,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:36:34.180Z",
+        "details": {
+          "retry": 2,
+          "status": "partial"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+        "langflow_job_id": "24a129c0-bd03-4928-bcb9-90c87482838b",
+        "specialty": "policy",
+        "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000052:policy:24a129c0-bd03-4928-bcb9-90c87482838b",
+        "attempt": 2,
+        "event_type": "preserved",
+        "occurred_at": "2026-09-20T20:36:34.184Z",
+        "details": {
+          "reason": "unaffected contribution preserved"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+        "langflow_job_id": "24a129c0-bd03-4928-bcb9-90c87482838b",
+        "specialty": "entity",
+        "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000052:entity:24a129c0-bd03-4928-bcb9-90c87482838b",
+        "attempt": 2,
+        "event_type": "preserved",
+        "occurred_at": "2026-09-20T20:36:34.185Z",
+        "details": {
+          "reason": "unaffected contribution preserved"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "specialty": "policy",
+        "task_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:policy:33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:40:24.562Z",
+        "details": {
+          "flow_id": "623b5639-b4be-4e2e-bba3-65e5a3158a6d",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "specialty": "entity",
+        "task_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:entity:33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:40:24.573Z",
+        "details": {
+          "flow_id": "9db6e3bd-132a-4a7d-909d-d06ad94f550a",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "specialty": "ownership",
+        "task_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:ownership:33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:40:24.584Z",
+        "details": {
+          "flow_id": "9f248e41-f6f0-44d6-ad04-3ff1b09f1655",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "specialty": "policy",
+        "task_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:policy:33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:40:24.828Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.2.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "specialty": "ownership",
+        "task_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:ownership:33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:40:29.357Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.1.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "specialty": "entity",
+        "task_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:entity:33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:40:31.721Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.1.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "35a61193-2d26-4310-8180-673b4d5da5f2",
+        "specialty": "ownership",
+        "task_id": "35a61193-2d26-4310-8180-673b4d5da5f2:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:ownership:35a61193-2d26-4310-8180-673b4d5da5f2",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:40:38.266Z",
+        "details": {
+          "flow_id": "9f248e41-f6f0-44d6-ad04-3ff1b09f1655",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "35a61193-2d26-4310-8180-673b4d5da5f2",
+        "specialty": "entity",
+        "task_id": "35a61193-2d26-4310-8180-673b4d5da5f2:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:entity:35a61193-2d26-4310-8180-673b4d5da5f2",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:40:38.277Z",
+        "details": {
+          "flow_id": "9db6e3bd-132a-4a7d-909d-d06ad94f550a",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "35a61193-2d26-4310-8180-673b4d5da5f2",
+        "specialty": "policy",
+        "task_id": "35a61193-2d26-4310-8180-673b4d5da5f2:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:policy:35a61193-2d26-4310-8180-673b4d5da5f2",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:40:38.288Z",
+        "details": {
+          "flow_id": "623b5639-b4be-4e2e-bba3-65e5a3158a6d",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "35a61193-2d26-4310-8180-673b4d5da5f2",
+        "specialty": "policy",
+        "task_id": "35a61193-2d26-4310-8180-673b4d5da5f2:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:policy:35a61193-2d26-4310-8180-673b4d5da5f2",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:40:38.546Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.2.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "35a61193-2d26-4310-8180-673b4d5da5f2",
+        "specialty": "ownership",
+        "task_id": "35a61193-2d26-4310-8180-673b4d5da5f2:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:ownership:35a61193-2d26-4310-8180-673b4d5da5f2",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:40:42.868Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.1.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "35a61193-2d26-4310-8180-673b4d5da5f2",
+        "specialty": "entity",
+        "task_id": "35a61193-2d26-4310-8180-673b4d5da5f2:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:entity:35a61193-2d26-4310-8180-673b4d5da5f2",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:40:45.727Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.1.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "776757ab-7ecd-482e-9192-c270a3d1f648",
+        "specialty": "entity",
+        "task_id": "776757ab-7ecd-482e-9192-c270a3d1f648:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:entity:776757ab-7ecd-482e-9192-c270a3d1f648",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:40:52.405Z",
+        "details": {
+          "flow_id": "9db6e3bd-132a-4a7d-909d-d06ad94f550a",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "776757ab-7ecd-482e-9192-c270a3d1f648",
+        "specialty": "ownership",
+        "task_id": "776757ab-7ecd-482e-9192-c270a3d1f648:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:ownership:776757ab-7ecd-482e-9192-c270a3d1f648",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:40:52.416Z",
+        "details": {
+          "flow_id": "9f248e41-f6f0-44d6-ad04-3ff1b09f1655",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "776757ab-7ecd-482e-9192-c270a3d1f648",
+        "specialty": "policy",
+        "task_id": "776757ab-7ecd-482e-9192-c270a3d1f648:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:policy:776757ab-7ecd-482e-9192-c270a3d1f648",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:40:52.427Z",
+        "details": {
+          "flow_id": "623b5639-b4be-4e2e-bba3-65e5a3158a6d",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "776757ab-7ecd-482e-9192-c270a3d1f648",
+        "specialty": "policy",
+        "task_id": "776757ab-7ecd-482e-9192-c270a3d1f648:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:policy:776757ab-7ecd-482e-9192-c270a3d1f648",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:40:52.685Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.2.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "776757ab-7ecd-482e-9192-c270a3d1f648",
+        "specialty": "ownership",
+        "task_id": "776757ab-7ecd-482e-9192-c270a3d1f648:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:ownership:776757ab-7ecd-482e-9192-c270a3d1f648",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:40:59.032Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.1.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "776757ab-7ecd-482e-9192-c270a3d1f648",
+        "specialty": "entity",
+        "task_id": "776757ab-7ecd-482e-9192-c270a3d1f648:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:entity:776757ab-7ecd-482e-9192-c270a3d1f648",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:40:59.536Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.1.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "7699ef51-b640-4994-912f-925e2f8861db",
+        "specialty": "policy",
+        "task_id": "7699ef51-b640-4994-912f-925e2f8861db:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:policy:7699ef51-b640-4994-912f-925e2f8861db",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:41:06.678Z",
+        "details": {
+          "flow_id": "623b5639-b4be-4e2e-bba3-65e5a3158a6d",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "7699ef51-b640-4994-912f-925e2f8861db",
+        "specialty": "entity",
+        "task_id": "7699ef51-b640-4994-912f-925e2f8861db:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:entity:7699ef51-b640-4994-912f-925e2f8861db",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:41:06.688Z",
+        "details": {
+          "flow_id": "9db6e3bd-132a-4a7d-909d-d06ad94f550a",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "7699ef51-b640-4994-912f-925e2f8861db",
+        "specialty": "ownership",
+        "task_id": "7699ef51-b640-4994-912f-925e2f8861db:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:ownership:7699ef51-b640-4994-912f-925e2f8861db",
+        "attempt": 1,
+        "event_type": "dispatched",
+        "occurred_at": "2026-09-20T20:41:06.703Z",
+        "details": {
+          "flow_id": "9f248e41-f6f0-44d6-ad04-3ff1b09f1655",
+          "transport": "Langflow Internal A2A"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "7699ef51-b640-4994-912f-925e2f8861db",
+        "specialty": "policy",
+        "task_id": "7699ef51-b640-4994-912f-925e2f8861db:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:policy:7699ef51-b640-4994-912f-925e2f8861db",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:41:06.964Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.2.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "7699ef51-b640-4994-912f-925e2f8861db",
+        "specialty": "ownership",
+        "task_id": "7699ef51-b640-4994-912f-925e2f8861db:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:ownership:7699ef51-b640-4994-912f-925e2f8861db",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:41:11.020Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.1.0"
+        }
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "langflow_job_id": "7699ef51-b640-4994-912f-925e2f8861db",
+        "specialty": "entity",
+        "task_id": "7699ef51-b640-4994-912f-925e2f8861db:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:entity:7699ef51-b640-4994-912f-925e2f8861db",
+        "attempt": 1,
+        "event_type": "validated",
+        "occurred_at": "2026-09-20T20:41:14.388Z",
+        "details": {
+          "status": "completed",
+          "agent_version": "3.1.0"
+        }
+      }
+    ],
+    "contributions": [
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+        "case_id": "32000000-0000-0000-0000-000000000052",
+        "langflow_job_id": "24a129c0-bd03-4928-bcb9-90c87482838b",
+        "specialty": "entity",
+        "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000052:entity:24a129c0-bd03-4928-bcb9-90c87482838b",
+        "agent_name": "kyb-entity-agent",
+        "agent_version": "3.1.0",
+        "status": "completed",
+        "source_scope": {
+          "case_evidence": "analysis_run_documents",
+          "network_access": false,
+          "scope_derived_by": "KYB Coordinator V3 from immutable run identity"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000052",
+            "excerpt": "ENTITY_FACT|field=legal_name|value=COORDINATOR INTERRUPTED LTD\nENTITY_FACT|field=jurisdiction|value=GB\nENTITY_FACT|field=identifier|identifier_type=registration_number|value=GB-COORD-52|jurisdiction=GB\nENTITY_FACT|field=address|address_type=registered|value=52 Threadneedle Street London\nENTITY_FACT|field=address|address_type=operating|value=52 Threadneedle Street London\nENTITY_FACT|field=address|address_type=mailing|value=52 Threadneedle Street London\nOWNERSHIP_EDGE|owner=Iris Bell|owner_type=person|owned=Coordinator Interrupted Ltd|percentage=52\nOWNERSHIP_EDGE|owner=Omar Khan|owner_type=person|owned=Coordinator Interrupted Ltd|percentage=30\nCASE_EVIDENCE|type=incorporation_record|reference=Companies House extract|status=supported|value=current\nCASE_EVIDENCE|type=operating_countries|reference=Country schedule|status=supported|value=GB;FR\nCASE_EVIDENCE|type=seller_screening_controls|reference=Screening procedure|status=supported|value=documented\nCASE_EVIDENCE|type=funds_flow|reference=Funds-flow diagram|status=supported|value=documented\nCASE_EVIDENCE|type=marketplace_license|reference=Marketplace license|status=supported|value=valid",
+            "locator": "Ownership evidence incomplete by 18 percent",
+            "chunk_id": "62000000-0000-0000-0000-000000000052",
+            "source_id": "52000000-0000-0000-0000-000000000052",
+            "source_kind": "case_document"
+          }
+        ],
+        "payload_hash": "96909381c8876f0a1bff9a08cae4dac316a85086cb3e5cbad91bc90c9fd3c722",
+        "started_at": "2026-09-20T20:36:13.392Z",
+        "completed_at": "2026-09-20T20:36:21.032Z",
+        "validated_at": "2026-09-20T20:36:21.032Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+        "case_id": "32000000-0000-0000-0000-000000000052",
+        "langflow_job_id": "24a129c0-bd03-4928-bcb9-90c87482838b",
+        "specialty": "ownership",
+        "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000052:ownership:24a129c0-bd03-4928-bcb9-90c87482838b",
+        "agent_name": "kyb-ownership-agent",
+        "agent_version": "3.1.0",
+        "status": "partial",
+        "source_scope": {
+          "case_evidence": "analysis_run_documents",
+          "network_access": false,
+          "scope_derived_by": "KYB Coordinator V3 from immutable run identity"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000052",
+            "excerpt": "ENTITY_FACT|field=legal_name|value=COORDINATOR INTERRUPTED LTD\nENTITY_FACT|field=jurisdiction|value=GB\nENTITY_FACT|field=identifier|identifier_type=registration_number|value=GB-COORD-52|jurisdiction=GB\nENTITY_FACT|field=address|address_type=registered|value=52 Threadneedle Street London\nENTITY_FACT|field=address|address_type=operating|value=52 Threadneedle Street London\nENTITY_FACT|field=address|address_type=mailing|value=52 Threadneedle Street London\nOWNERSHIP_EDGE|owner=Iris Bell|owner_type=person|owned=Coordinator Interrupted Ltd|percentage=52\nOWNERSHIP_EDGE|owner=Omar Khan|owner_type=person|owned=Coordinator Interrupted Ltd|percentage=30\nCASE_EVIDENCE|type=incorporation_record|reference=Companies House extract|status=supported|value=current\nCASE_EVIDENCE|type=operating_countries|reference=Country schedule|status=supported|value=GB;FR\nCASE_EVIDENCE|type=seller_screening_controls|reference=Screening procedure|status=supported|value=documented\nCASE_EVIDENCE|type=funds_flow|reference=Funds-flow diagram|status=supported|value=documented\nCASE_EVIDENCE|type=marketplace_license|reference=Marketplace license|status=supported|value=valid",
+            "locator": "Ownership evidence incomplete by 18 percent",
+            "chunk_id": "62000000-0000-0000-0000-000000000052",
+            "source_id": "52000000-0000-0000-0000-000000000052",
+            "source_kind": "case_document"
+          }
+        ],
+        "payload_hash": "d19c6d34046fee1c546ccdd49a5c6e2041b1daed2c02121b31b35dfaf3de115d",
+        "started_at": "2026-09-20T20:36:13.380Z",
+        "completed_at": "2026-09-20T20:36:18.679Z",
+        "validated_at": "2026-09-20T20:36:18.679Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+        "case_id": "32000000-0000-0000-0000-000000000052",
+        "langflow_job_id": "24a129c0-bd03-4928-bcb9-90c87482838b",
+        "specialty": "ownership",
+        "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:ownership:a2",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000052:ownership:24a129c0-bd03-4928-bcb9-90c87482838b:retry",
+        "agent_name": "kyb-ownership-agent",
+        "agent_version": "3.1.0",
+        "status": "partial",
+        "source_scope": {
+          "case_evidence": "analysis_run_documents",
+          "network_access": false,
+          "scope_derived_by": "KYB Coordinator V3 from immutable run identity"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000052",
+            "excerpt": "ENTITY_FACT|field=legal_name|value=COORDINATOR INTERRUPTED LTD\nENTITY_FACT|field=jurisdiction|value=GB\nENTITY_FACT|field=identifier|identifier_type=registration_number|value=GB-COORD-52|jurisdiction=GB\nENTITY_FACT|field=address|address_type=registered|value=52 Threadneedle Street London\nENTITY_FACT|field=address|address_type=operating|value=52 Threadneedle Street London\nENTITY_FACT|field=address|address_type=mailing|value=52 Threadneedle Street London\nOWNERSHIP_EDGE|owner=Iris Bell|owner_type=person|owned=Coordinator Interrupted Ltd|percentage=52\nOWNERSHIP_EDGE|owner=Omar Khan|owner_type=person|owned=Coordinator Interrupted Ltd|percentage=30\nCASE_EVIDENCE|type=incorporation_record|reference=Companies House extract|status=supported|value=current\nCASE_EVIDENCE|type=operating_countries|reference=Country schedule|status=supported|value=GB;FR\nCASE_EVIDENCE|type=seller_screening_controls|reference=Screening procedure|status=supported|value=documented\nCASE_EVIDENCE|type=funds_flow|reference=Funds-flow diagram|status=supported|value=documented\nCASE_EVIDENCE|type=marketplace_license|reference=Marketplace license|status=supported|value=valid",
+            "locator": "Ownership evidence incomplete by 18 percent",
+            "chunk_id": "62000000-0000-0000-0000-000000000052",
+            "source_id": "52000000-0000-0000-0000-000000000052",
+            "source_kind": "case_document"
+          }
+        ],
+        "payload_hash": "ce2d389b46764a5308c9184e49246ce1e8600d0fc37d7ca81da7f8ceb2723c24",
+        "started_at": "2026-09-20T20:36:29.677Z",
+        "completed_at": "2026-09-20T20:36:34.180Z",
+        "validated_at": "2026-09-20T20:36:34.183Z",
+        "attempt": 2
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+        "case_id": "32000000-0000-0000-0000-000000000052",
+        "langflow_job_id": "24a129c0-bd03-4928-bcb9-90c87482838b",
+        "specialty": "policy",
+        "task_id": "24a129c0-bd03-4928-bcb9-90c87482838b:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000052:policy:24a129c0-bd03-4928-bcb9-90c87482838b",
+        "agent_name": "kyb-policy-agent",
+        "agent_version": "3.2.0",
+        "status": "completed",
+        "source_scope": {
+          "policy_requirements": "analysis_run_policy_versions",
+          "separation_enforced": true,
+          "documentary_case_evidence": "analysis_run_documents"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000052-10",
+            "excerpt": "CASE_EVIDENCE|type=operating_countries|reference=Country schedule|status=supported|value=GB;FR",
+            "locator": "Ownership evidence incomplete by 18 percent",
+            "chunk_id": "62000000-0000-0000-0000-000000000052",
+            "source_id": "52000000-0000-0000-0000-000000000052",
+            "source_kind": "case_document"
+          },
+          {
+            "id": "case-62000000-0000-0000-0000-000000000052-11",
+            "excerpt": "CASE_EVIDENCE|type=seller_screening_controls|reference=Screening procedure|status=supported|value=documented",
+            "locator": "Ownership evidence incomplete by 18 percent",
+            "chunk_id": "62000000-0000-0000-0000-000000000052",
+            "source_id": "52000000-0000-0000-0000-000000000052",
+            "source_kind": "case_document"
+          },
+          {
+            "id": "case-62000000-0000-0000-0000-000000000052-12",
+            "excerpt": "CASE_EVIDENCE|type=funds_flow|reference=Funds-flow diagram|status=supported|value=documented",
+            "locator": "Ownership evidence incomplete by 18 percent",
+            "chunk_id": "62000000-0000-0000-0000-000000000052",
+            "source_id": "52000000-0000-0000-0000-000000000052",
+            "source_kind": "case_document"
+          },
+          {
+            "id": "case-62000000-0000-0000-0000-000000000052-13",
+            "excerpt": "CASE_EVIDENCE|type=marketplace_license|reference=Marketplace license|status=supported|value=valid",
+            "locator": "Ownership evidence incomplete by 18 percent",
+            "chunk_id": "62000000-0000-0000-0000-000000000052",
+            "source_id": "52000000-0000-0000-0000-000000000052",
+            "source_kind": "case_document"
+          },
+          {
+            "id": "case-62000000-0000-0000-0000-000000000052-9",
+            "excerpt": "CASE_EVIDENCE|type=incorporation_record|reference=Companies House extract|status=supported|value=current",
+            "locator": "Ownership evidence incomplete by 18 percent",
+            "chunk_id": "62000000-0000-0000-0000-000000000052",
+            "source_id": "52000000-0000-0000-0000-000000000052",
+            "source_kind": "case_document"
+          },
+          {
+            "id": "policy-91000000-0000-0000-0000-000000000012",
+            "excerpt": "POLICY_REQUIREMENT|code=KYB-BASE-2|description=The applicant legal entity must be supported by current incorporation evidence.|required_evidence=incorporation_record|exception_code=|exception_conditions=|exception_required_evidence=|escalation_conditions=Unresolved identity evidence requires analyst escalation.|precedence=",
+            "locator": "KYB-BASE-2",
+            "chunk_id": "91000000-0000-0000-0000-000000000012",
+            "source_id": "81000000-0000-0000-0000-000000000012",
+            "source_kind": "policy"
+          },
+          {
+            "id": "policy-91000000-0000-0000-0000-000000000013",
+            "excerpt": "POLICY_REQUIREMENT|code=MRKT-CB-1|description=A cross-border marketplace must document operating countries, seller screening controls, funds flow, and its marketplace license.|required_evidence=operating_countries;seller_screening_controls;funds_flow;marketplace_license|exception_code=|exception_conditions=|exception_required_evidence=|escalation_conditions=Missing or conflicting marketplace controls require enhanced review.|precedence=",
+            "locator": "MRKT-CB-1",
+            "chunk_id": "91000000-0000-0000-0000-000000000013",
+            "source_id": "81000000-0000-0000-0000-000000000013",
+            "source_kind": "policy"
+          }
+        ],
+        "payload_hash": "ae5cc5d3c459ec1927befdb8594c4ee727a2f79215f319a68ed2294011b632c0",
+        "started_at": "2026-09-20T20:36:13.403Z",
+        "completed_at": "2026-09-20T20:36:13.640Z",
+        "validated_at": "2026-09-20T20:36:13.640Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "specialty": "entity",
+        "task_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:entity:33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "agent_name": "kyb-entity-agent",
+        "agent_version": "3.1.0",
+        "status": "completed",
+        "source_scope": {
+          "case_evidence": "analysis_run_documents",
+          "network_access": false,
+          "scope_derived_by": "KYB Coordinator V3 from immutable run identity"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000051",
+            "excerpt": "ENTITY_FACT|field=legal_name|value=COORDINATOR COMPLETE LLC|observed_at=2026-09-20\nENTITY_FACT|field=jurisdiction|value=US-CA|observed_at=2026-09-20\nENTITY_FACT|field=identifier|identifier_type=registration_number|value=CA-COORD-51|jurisdiction=US-CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=registered|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=operating|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=mailing|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nOWNERSHIP_EDGE|owner=Aria Chen|owner_type=person|owned=Coordinator Complete LLC|percentage=60\nOWNERSHIP_EDGE|owner=Noah Reed|owner_type=person|owned=Coordinator Complete LLC|percentage=40\nCASE_EVIDENCE|type=incorporation_record|reference=California formation certificate|status=supported|value=current",
+            "locator": "Complete entity, ownership, and policy evidence",
+            "chunk_id": "62000000-0000-0000-0000-000000000051",
+            "source_id": "52000000-0000-0000-0000-000000000051",
+            "source_kind": "case_document"
+          }
+        ],
+        "payload_hash": "3a5e08a08d2bd75cb372120ce264abe08cadd46fc42553b4b1b50d95b3b9d6fd",
+        "started_at": "2026-09-20T20:40:24.573Z",
+        "completed_at": "2026-09-20T20:40:31.721Z",
+        "validated_at": "2026-09-20T20:40:31.721Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "specialty": "ownership",
+        "task_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:ownership:33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "agent_name": "kyb-ownership-agent",
+        "agent_version": "3.1.0",
+        "status": "completed",
+        "source_scope": {
+          "case_evidence": "analysis_run_documents",
+          "network_access": false,
+          "scope_derived_by": "KYB Coordinator V3 from immutable run identity"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000051",
+            "excerpt": "ENTITY_FACT|field=legal_name|value=COORDINATOR COMPLETE LLC|observed_at=2026-09-20\nENTITY_FACT|field=jurisdiction|value=US-CA|observed_at=2026-09-20\nENTITY_FACT|field=identifier|identifier_type=registration_number|value=CA-COORD-51|jurisdiction=US-CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=registered|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=operating|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=mailing|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nOWNERSHIP_EDGE|owner=Aria Chen|owner_type=person|owned=Coordinator Complete LLC|percentage=60\nOWNERSHIP_EDGE|owner=Noah Reed|owner_type=person|owned=Coordinator Complete LLC|percentage=40\nCASE_EVIDENCE|type=incorporation_record|reference=California formation certificate|status=supported|value=current",
+            "locator": "Complete entity, ownership, and policy evidence",
+            "chunk_id": "62000000-0000-0000-0000-000000000051",
+            "source_id": "52000000-0000-0000-0000-000000000051",
+            "source_kind": "case_document"
+          }
+        ],
+        "payload_hash": "33b6d03943a7ebc998f29c85a0e883f33915105b30e089d0cc8e1f733f11a37b",
+        "started_at": "2026-09-20T20:40:24.584Z",
+        "completed_at": "2026-09-20T20:40:29.357Z",
+        "validated_at": "2026-09-20T20:40:29.358Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "specialty": "policy",
+        "task_id": "33ea4944-59f8-45ae-aaa9-18c6fd27f743:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:policy:33ea4944-59f8-45ae-aaa9-18c6fd27f743",
+        "agent_name": "kyb-policy-agent",
+        "agent_version": "3.2.0",
+        "status": "completed",
+        "source_scope": {
+          "policy_requirements": "analysis_run_policy_versions",
+          "separation_enforced": true,
+          "documentary_case_evidence": "analysis_run_documents"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000051-9",
+            "excerpt": "CASE_EVIDENCE|type=incorporation_record|reference=California formation certificate|status=supported|value=current",
+            "locator": "Complete entity, ownership, and policy evidence",
+            "chunk_id": "62000000-0000-0000-0000-000000000051",
+            "source_id": "52000000-0000-0000-0000-000000000051",
+            "source_kind": "case_document"
+          },
+          {
+            "id": "policy-91000000-0000-0000-0000-000000000012",
+            "excerpt": "POLICY_REQUIREMENT|code=KYB-BASE-2|description=The applicant legal entity must be supported by current incorporation evidence.|required_evidence=incorporation_record|exception_code=|exception_conditions=|exception_required_evidence=|escalation_conditions=Unresolved identity evidence requires analyst escalation.|precedence=",
+            "locator": "KYB-BASE-2",
+            "chunk_id": "91000000-0000-0000-0000-000000000012",
+            "source_id": "81000000-0000-0000-0000-000000000012",
+            "source_kind": "policy"
+          }
+        ],
+        "payload_hash": "bfdb7fab89be564162fe96a0c5202456639693fc34b127a540ebf25229eb50d9",
+        "started_at": "2026-09-20T20:40:24.562Z",
+        "completed_at": "2026-09-20T20:40:24.828Z",
+        "validated_at": "2026-09-20T20:40:24.829Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "35a61193-2d26-4310-8180-673b4d5da5f2",
+        "specialty": "entity",
+        "task_id": "35a61193-2d26-4310-8180-673b4d5da5f2:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:entity:35a61193-2d26-4310-8180-673b4d5da5f2",
+        "agent_name": "kyb-entity-agent",
+        "agent_version": "3.1.0",
+        "status": "completed",
+        "source_scope": {
+          "case_evidence": "analysis_run_documents",
+          "network_access": false,
+          "scope_derived_by": "KYB Coordinator V3 from immutable run identity"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000051",
+            "excerpt": "ENTITY_FACT|field=legal_name|value=COORDINATOR COMPLETE LLC|observed_at=2026-09-20\nENTITY_FACT|field=jurisdiction|value=US-CA|observed_at=2026-09-20\nENTITY_FACT|field=identifier|identifier_type=registration_number|value=CA-COORD-51|jurisdiction=US-CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=registered|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=operating|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=mailing|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nOWNERSHIP_EDGE|owner=Aria Chen|owner_type=person|owned=Coordinator Complete LLC|percentage=60\nOWNERSHIP_EDGE|owner=Noah Reed|owner_type=person|owned=Coordinator Complete LLC|percentage=40\nCASE_EVIDENCE|type=incorporation_record|reference=California formation certificate|status=supported|value=current",
+            "locator": "Complete entity, ownership, and policy evidence",
+            "chunk_id": "62000000-0000-0000-0000-000000000051",
+            "source_id": "52000000-0000-0000-0000-000000000051",
+            "source_kind": "case_document"
+          }
+        ],
+        "payload_hash": "07c7f1fdd8347cd3f46da63696290ec294808a00852dcb892683a56f338375b9",
+        "started_at": "2026-09-20T20:40:38.277Z",
+        "completed_at": "2026-09-20T20:40:45.727Z",
+        "validated_at": "2026-09-20T20:40:45.728Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "35a61193-2d26-4310-8180-673b4d5da5f2",
+        "specialty": "ownership",
+        "task_id": "35a61193-2d26-4310-8180-673b4d5da5f2:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:ownership:35a61193-2d26-4310-8180-673b4d5da5f2",
+        "agent_name": "kyb-ownership-agent",
+        "agent_version": "3.1.0",
+        "status": "completed",
+        "source_scope": {
+          "case_evidence": "analysis_run_documents",
+          "network_access": false,
+          "scope_derived_by": "KYB Coordinator V3 from immutable run identity"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000051",
+            "excerpt": "ENTITY_FACT|field=legal_name|value=COORDINATOR COMPLETE LLC|observed_at=2026-09-20\nENTITY_FACT|field=jurisdiction|value=US-CA|observed_at=2026-09-20\nENTITY_FACT|field=identifier|identifier_type=registration_number|value=CA-COORD-51|jurisdiction=US-CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=registered|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=operating|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=mailing|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nOWNERSHIP_EDGE|owner=Aria Chen|owner_type=person|owned=Coordinator Complete LLC|percentage=60\nOWNERSHIP_EDGE|owner=Noah Reed|owner_type=person|owned=Coordinator Complete LLC|percentage=40\nCASE_EVIDENCE|type=incorporation_record|reference=California formation certificate|status=supported|value=current",
+            "locator": "Complete entity, ownership, and policy evidence",
+            "chunk_id": "62000000-0000-0000-0000-000000000051",
+            "source_id": "52000000-0000-0000-0000-000000000051",
+            "source_kind": "case_document"
+          }
+        ],
+        "payload_hash": "324955cf4d928a64a692aa9e9313b9003b5bca8dc1eca71df64c1962378ffc6b",
+        "started_at": "2026-09-20T20:40:38.266Z",
+        "completed_at": "2026-09-20T20:40:42.868Z",
+        "validated_at": "2026-09-20T20:40:42.868Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "35a61193-2d26-4310-8180-673b4d5da5f2",
+        "specialty": "policy",
+        "task_id": "35a61193-2d26-4310-8180-673b4d5da5f2:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:policy:35a61193-2d26-4310-8180-673b4d5da5f2",
+        "agent_name": "kyb-policy-agent",
+        "agent_version": "3.2.0",
+        "status": "completed",
+        "source_scope": {
+          "policy_requirements": "analysis_run_policy_versions",
+          "separation_enforced": true,
+          "documentary_case_evidence": "analysis_run_documents"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000051-9",
+            "excerpt": "CASE_EVIDENCE|type=incorporation_record|reference=California formation certificate|status=supported|value=current",
+            "locator": "Complete entity, ownership, and policy evidence",
+            "chunk_id": "62000000-0000-0000-0000-000000000051",
+            "source_id": "52000000-0000-0000-0000-000000000051",
+            "source_kind": "case_document"
+          },
+          {
+            "id": "policy-91000000-0000-0000-0000-000000000012",
+            "excerpt": "POLICY_REQUIREMENT|code=KYB-BASE-2|description=The applicant legal entity must be supported by current incorporation evidence.|required_evidence=incorporation_record|exception_code=|exception_conditions=|exception_required_evidence=|escalation_conditions=Unresolved identity evidence requires analyst escalation.|precedence=",
+            "locator": "KYB-BASE-2",
+            "chunk_id": "91000000-0000-0000-0000-000000000012",
+            "source_id": "81000000-0000-0000-0000-000000000012",
+            "source_kind": "policy"
+          }
+        ],
+        "payload_hash": "603e35aeaacdb5ef20732fdc2ff650092311da72ba7d1249e788d18eac2ba2ef",
+        "started_at": "2026-09-20T20:40:38.288Z",
+        "completed_at": "2026-09-20T20:40:38.546Z",
+        "validated_at": "2026-09-20T20:40:38.546Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "7699ef51-b640-4994-912f-925e2f8861db",
+        "specialty": "entity",
+        "task_id": "7699ef51-b640-4994-912f-925e2f8861db:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:entity:7699ef51-b640-4994-912f-925e2f8861db",
+        "agent_name": "kyb-entity-agent",
+        "agent_version": "3.1.0",
+        "status": "completed",
+        "source_scope": {
+          "case_evidence": "analysis_run_documents",
+          "network_access": false,
+          "scope_derived_by": "KYB Coordinator V3 from immutable run identity"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000051",
+            "excerpt": "ENTITY_FACT|field=legal_name|value=COORDINATOR COMPLETE LLC|observed_at=2026-09-20\nENTITY_FACT|field=jurisdiction|value=US-CA|observed_at=2026-09-20\nENTITY_FACT|field=identifier|identifier_type=registration_number|value=CA-COORD-51|jurisdiction=US-CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=registered|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=operating|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=mailing|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nOWNERSHIP_EDGE|owner=Aria Chen|owner_type=person|owned=Coordinator Complete LLC|percentage=60\nOWNERSHIP_EDGE|owner=Noah Reed|owner_type=person|owned=Coordinator Complete LLC|percentage=40\nCASE_EVIDENCE|type=incorporation_record|reference=California formation certificate|status=supported|value=current",
+            "locator": "Complete entity, ownership, and policy evidence",
+            "chunk_id": "62000000-0000-0000-0000-000000000051",
+            "source_id": "52000000-0000-0000-0000-000000000051",
+            "source_kind": "case_document"
+          }
+        ],
+        "payload_hash": "a33962532e57b996257a3a8caee22420e96332ca54bed1aaa2a4a33d871148d9",
+        "started_at": "2026-09-20T20:41:06.688Z",
+        "completed_at": "2026-09-20T20:41:14.388Z",
+        "validated_at": "2026-09-20T20:41:14.388Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "7699ef51-b640-4994-912f-925e2f8861db",
+        "specialty": "ownership",
+        "task_id": "7699ef51-b640-4994-912f-925e2f8861db:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:ownership:7699ef51-b640-4994-912f-925e2f8861db",
+        "agent_name": "kyb-ownership-agent",
+        "agent_version": "3.1.0",
+        "status": "completed",
+        "source_scope": {
+          "case_evidence": "analysis_run_documents",
+          "network_access": false,
+          "scope_derived_by": "KYB Coordinator V3 from immutable run identity"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000051",
+            "excerpt": "ENTITY_FACT|field=legal_name|value=COORDINATOR COMPLETE LLC|observed_at=2026-09-20\nENTITY_FACT|field=jurisdiction|value=US-CA|observed_at=2026-09-20\nENTITY_FACT|field=identifier|identifier_type=registration_number|value=CA-COORD-51|jurisdiction=US-CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=registered|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=operating|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=mailing|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nOWNERSHIP_EDGE|owner=Aria Chen|owner_type=person|owned=Coordinator Complete LLC|percentage=60\nOWNERSHIP_EDGE|owner=Noah Reed|owner_type=person|owned=Coordinator Complete LLC|percentage=40\nCASE_EVIDENCE|type=incorporation_record|reference=California formation certificate|status=supported|value=current",
+            "locator": "Complete entity, ownership, and policy evidence",
+            "chunk_id": "62000000-0000-0000-0000-000000000051",
+            "source_id": "52000000-0000-0000-0000-000000000051",
+            "source_kind": "case_document"
+          }
+        ],
+        "payload_hash": "2f93a071eb25a547e2143de02c7e26e3841b1051466ef63d2ce12ebd7a3bb961",
+        "started_at": "2026-09-20T20:41:06.703Z",
+        "completed_at": "2026-09-20T20:41:11.020Z",
+        "validated_at": "2026-09-20T20:41:11.020Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "7699ef51-b640-4994-912f-925e2f8861db",
+        "specialty": "policy",
+        "task_id": "7699ef51-b640-4994-912f-925e2f8861db:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:policy:7699ef51-b640-4994-912f-925e2f8861db",
+        "agent_name": "kyb-policy-agent",
+        "agent_version": "3.2.0",
+        "status": "completed",
+        "source_scope": {
+          "policy_requirements": "analysis_run_policy_versions",
+          "separation_enforced": true,
+          "documentary_case_evidence": "analysis_run_documents"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000051-9",
+            "excerpt": "CASE_EVIDENCE|type=incorporation_record|reference=California formation certificate|status=supported|value=current",
+            "locator": "Complete entity, ownership, and policy evidence",
+            "chunk_id": "62000000-0000-0000-0000-000000000051",
+            "source_id": "52000000-0000-0000-0000-000000000051",
+            "source_kind": "case_document"
+          },
+          {
+            "id": "policy-91000000-0000-0000-0000-000000000012",
+            "excerpt": "POLICY_REQUIREMENT|code=KYB-BASE-2|description=The applicant legal entity must be supported by current incorporation evidence.|required_evidence=incorporation_record|exception_code=|exception_conditions=|exception_required_evidence=|escalation_conditions=Unresolved identity evidence requires analyst escalation.|precedence=",
+            "locator": "KYB-BASE-2",
+            "chunk_id": "91000000-0000-0000-0000-000000000012",
+            "source_id": "81000000-0000-0000-0000-000000000012",
+            "source_kind": "policy"
+          }
+        ],
+        "payload_hash": "f018ef3d9bcac05692933c07f36acba284905cb86ae9e11fb5c5296898a1ad08",
+        "started_at": "2026-09-20T20:41:06.678Z",
+        "completed_at": "2026-09-20T20:41:06.964Z",
+        "validated_at": "2026-09-20T20:41:06.964Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "776757ab-7ecd-482e-9192-c270a3d1f648",
+        "specialty": "entity",
+        "task_id": "776757ab-7ecd-482e-9192-c270a3d1f648:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:entity:776757ab-7ecd-482e-9192-c270a3d1f648",
+        "agent_name": "kyb-entity-agent",
+        "agent_version": "3.1.0",
+        "status": "completed",
+        "source_scope": {
+          "case_evidence": "analysis_run_documents",
+          "network_access": false,
+          "scope_derived_by": "KYB Coordinator V3 from immutable run identity"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000051",
+            "excerpt": "ENTITY_FACT|field=legal_name|value=COORDINATOR COMPLETE LLC|observed_at=2026-09-20\nENTITY_FACT|field=jurisdiction|value=US-CA|observed_at=2026-09-20\nENTITY_FACT|field=identifier|identifier_type=registration_number|value=CA-COORD-51|jurisdiction=US-CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=registered|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=operating|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=mailing|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nOWNERSHIP_EDGE|owner=Aria Chen|owner_type=person|owned=Coordinator Complete LLC|percentage=60\nOWNERSHIP_EDGE|owner=Noah Reed|owner_type=person|owned=Coordinator Complete LLC|percentage=40\nCASE_EVIDENCE|type=incorporation_record|reference=California formation certificate|status=supported|value=current",
+            "locator": "Complete entity, ownership, and policy evidence",
+            "chunk_id": "62000000-0000-0000-0000-000000000051",
+            "source_id": "52000000-0000-0000-0000-000000000051",
+            "source_kind": "case_document"
+          }
+        ],
+        "payload_hash": "49df536b3e8698d6c5311b8bd55b1b3fa16f2d05f6f87b8f39f83a42411037c0",
+        "started_at": "2026-09-20T20:40:52.405Z",
+        "completed_at": "2026-09-20T20:40:59.536Z",
+        "validated_at": "2026-09-20T20:40:59.536Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "776757ab-7ecd-482e-9192-c270a3d1f648",
+        "specialty": "ownership",
+        "task_id": "776757ab-7ecd-482e-9192-c270a3d1f648:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:ownership:776757ab-7ecd-482e-9192-c270a3d1f648",
+        "agent_name": "kyb-ownership-agent",
+        "agent_version": "3.1.0",
+        "status": "completed",
+        "source_scope": {
+          "case_evidence": "analysis_run_documents",
+          "network_access": false,
+          "scope_derived_by": "KYB Coordinator V3 from immutable run identity"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000051",
+            "excerpt": "ENTITY_FACT|field=legal_name|value=COORDINATOR COMPLETE LLC|observed_at=2026-09-20\nENTITY_FACT|field=jurisdiction|value=US-CA|observed_at=2026-09-20\nENTITY_FACT|field=identifier|identifier_type=registration_number|value=CA-COORD-51|jurisdiction=US-CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=registered|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=operating|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nENTITY_FACT|field=address|address_type=mailing|value=51 Market Street San Francisco CA|observed_at=2026-09-20\nOWNERSHIP_EDGE|owner=Aria Chen|owner_type=person|owned=Coordinator Complete LLC|percentage=60\nOWNERSHIP_EDGE|owner=Noah Reed|owner_type=person|owned=Coordinator Complete LLC|percentage=40\nCASE_EVIDENCE|type=incorporation_record|reference=California formation certificate|status=supported|value=current",
+            "locator": "Complete entity, ownership, and policy evidence",
+            "chunk_id": "62000000-0000-0000-0000-000000000051",
+            "source_id": "52000000-0000-0000-0000-000000000051",
+            "source_kind": "case_document"
+          }
+        ],
+        "payload_hash": "fe986485148080e3f665c22f9a979248a6183ec138e39306f7a87c5837b87efc",
+        "started_at": "2026-09-20T20:40:52.416Z",
+        "completed_at": "2026-09-20T20:40:59.032Z",
+        "validated_at": "2026-09-20T20:40:59.032Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "776757ab-7ecd-482e-9192-c270a3d1f648",
+        "specialty": "policy",
+        "task_id": "776757ab-7ecd-482e-9192-c270a3d1f648:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000051:policy:776757ab-7ecd-482e-9192-c270a3d1f648",
+        "agent_name": "kyb-policy-agent",
+        "agent_version": "3.2.0",
+        "status": "completed",
+        "source_scope": {
+          "policy_requirements": "analysis_run_policy_versions",
+          "separation_enforced": true,
+          "documentary_case_evidence": "analysis_run_documents"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000051-9",
+            "excerpt": "CASE_EVIDENCE|type=incorporation_record|reference=California formation certificate|status=supported|value=current",
+            "locator": "Complete entity, ownership, and policy evidence",
+            "chunk_id": "62000000-0000-0000-0000-000000000051",
+            "source_id": "52000000-0000-0000-0000-000000000051",
+            "source_kind": "case_document"
+          },
+          {
+            "id": "policy-91000000-0000-0000-0000-000000000012",
+            "excerpt": "POLICY_REQUIREMENT|code=KYB-BASE-2|description=The applicant legal entity must be supported by current incorporation evidence.|required_evidence=incorporation_record|exception_code=|exception_conditions=|exception_required_evidence=|escalation_conditions=Unresolved identity evidence requires analyst escalation.|precedence=",
+            "locator": "KYB-BASE-2",
+            "chunk_id": "91000000-0000-0000-0000-000000000012",
+            "source_id": "81000000-0000-0000-0000-000000000012",
+            "source_kind": "policy"
+          }
+        ],
+        "payload_hash": "7e0272849b49b383b3e7da833879a8a986afa0cfa0cf2ca324869ac200128a8f",
+        "started_at": "2026-09-20T20:40:52.427Z",
+        "completed_at": "2026-09-20T20:40:52.685Z",
+        "validated_at": "2026-09-20T20:40:52.685Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+        "case_id": "32000000-0000-0000-0000-000000000054",
+        "langflow_job_id": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "specialty": "entity",
+        "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000054:entity:7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "agent_name": "kyb-entity-agent",
+        "agent_version": "3.1.0",
+        "status": "completed",
+        "source_scope": {
+          "case_evidence": "analysis_run_documents",
+          "network_access": false,
+          "scope_derived_by": "KYB Coordinator V3 from immutable run identity"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000054",
+            "excerpt": "ENTITY_FACT|field=legal_name|value=COORDINATOR RECOVERY LLC\nENTITY_FACT|field=jurisdiction|value=US-DE\nENTITY_FACT|field=identifier|identifier_type=registration_number|value=DE-COORD-54|jurisdiction=US-DE\nENTITY_FACT|field=address|address_type=registered|value=54 Recovery Way Wilmington DE\nENTITY_FACT|field=address|address_type=operating|value=54 Recovery Way Wilmington DE\nENTITY_FACT|field=address|address_type=mailing|value=54 Recovery Way Wilmington DE\nOWNERSHIP_EDGE|owner=Zoe Hart|owner_type=person|owned=Coordinator Recovery LLC|percentage=55\nOWNERSHIP_EDGE|owner=Leo Park|owner_type=person|owned=Coordinator Recovery LLC|percentage=45\nCASE_EVIDENCE|type=incorporation_record|reference=Delaware formation certificate|status=supported|value=current",
+            "locator": "Valid evidence with deterministic first-attempt integration failure",
+            "chunk_id": "62000000-0000-0000-0000-000000000054",
+            "source_id": "52000000-0000-0000-0000-000000000054",
+            "source_kind": "case_document"
+          }
+        ],
+        "payload_hash": "9afcdf45776d4cebe27261572cc9bad222d29895a15a8031097259cc6679a107",
+        "started_at": "2026-09-20T20:35:51.920Z",
+        "completed_at": "2026-09-20T20:35:59.779Z",
+        "validated_at": "2026-09-20T20:35:59.779Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+        "case_id": "32000000-0000-0000-0000-000000000054",
+        "langflow_job_id": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "specialty": "ownership",
+        "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000054:ownership:7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "agent_name": "kyb-ownership-agent",
+        "agent_version": "3.1.0",
+        "status": "completed",
+        "source_scope": {
+          "case_evidence": "analysis_run_documents",
+          "network_access": false,
+          "scope_derived_by": "KYB Coordinator V3 from immutable run identity"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000054",
+            "excerpt": "ENTITY_FACT|field=legal_name|value=COORDINATOR RECOVERY LLC\nENTITY_FACT|field=jurisdiction|value=US-DE\nENTITY_FACT|field=identifier|identifier_type=registration_number|value=DE-COORD-54|jurisdiction=US-DE\nENTITY_FACT|field=address|address_type=registered|value=54 Recovery Way Wilmington DE\nENTITY_FACT|field=address|address_type=operating|value=54 Recovery Way Wilmington DE\nENTITY_FACT|field=address|address_type=mailing|value=54 Recovery Way Wilmington DE\nOWNERSHIP_EDGE|owner=Zoe Hart|owner_type=person|owned=Coordinator Recovery LLC|percentage=55\nOWNERSHIP_EDGE|owner=Leo Park|owner_type=person|owned=Coordinator Recovery LLC|percentage=45\nCASE_EVIDENCE|type=incorporation_record|reference=Delaware formation certificate|status=supported|value=current",
+            "locator": "Valid evidence with deterministic first-attempt integration failure",
+            "chunk_id": "62000000-0000-0000-0000-000000000054",
+            "source_id": "52000000-0000-0000-0000-000000000054",
+            "source_kind": "case_document"
+          }
+        ],
+        "payload_hash": "efdfc19b9b0b688d03453bd3755d15fbad23655692d2240e8a2184d3f2fee8ea",
+        "started_at": "2026-09-20T20:35:51.930Z",
+        "completed_at": "2026-09-20T20:35:57.615Z",
+        "validated_at": "2026-09-20T20:35:57.615Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+        "case_id": "32000000-0000-0000-0000-000000000054",
+        "langflow_job_id": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "specialty": "policy",
+        "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000054:policy:7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "agent_name": "kyb-policy-agent",
+        "agent_version": "3.2.0",
+        "status": "failed",
+        "source_scope": {
+          "policy_requirements": "analysis_run_policy_versions",
+          "separation_enforced": true,
+          "documentary_case_evidence": "analysis_run_documents"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000054-9",
+            "excerpt": "CASE_EVIDENCE|type=incorporation_record|reference=Delaware formation certificate|status=supported|value=current",
+            "locator": "Valid evidence with deterministic first-attempt integration failure",
+            "chunk_id": "62000000-0000-0000-0000-000000000054",
+            "source_id": "52000000-0000-0000-0000-000000000054",
+            "source_kind": "case_document"
+          },
+          {
+            "id": "policy-91000000-0000-0000-0000-000000000012",
+            "excerpt": "POLICY_REQUIREMENT|code=KYB-BASE-2|description=The applicant legal entity must be supported by current incorporation evidence.|required_evidence=incorporation_record|exception_code=|exception_conditions=|exception_required_evidence=|escalation_conditions=Unresolved identity evidence requires analyst escalation.|precedence=",
+            "locator": "KYB-BASE-2",
+            "chunk_id": "91000000-0000-0000-0000-000000000012",
+            "source_id": "81000000-0000-0000-0000-000000000012",
+            "source_kind": "policy"
+          }
+        ],
+        "payload_hash": "a71c06c89bd6d67306293be42f29d5aa4a785e3c74c72f270b1bbaee2a9200fe",
+        "started_at": "2026-09-20T20:35:51.941Z",
+        "completed_at": "2026-09-20T20:35:52.902Z",
+        "validated_at": "2026-09-20T20:35:52.902Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+        "case_id": "32000000-0000-0000-0000-000000000054",
+        "langflow_job_id": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "specialty": "policy",
+        "task_id": "7f68fff4-6fd4-49da-be14-b65c79d00306:policy:a2",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000054:policy:7f68fff4-6fd4-49da-be14-b65c79d00306:retry",
+        "agent_name": "kyb-policy-agent",
+        "agent_version": "3.2.0",
+        "status": "completed",
+        "source_scope": {
+          "policy_requirements": "analysis_run_policy_versions",
+          "separation_enforced": true,
+          "documentary_case_evidence": "analysis_run_documents"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000054-9",
+            "excerpt": "CASE_EVIDENCE|type=incorporation_record|reference=Delaware formation certificate|status=supported|value=current",
+            "locator": "Valid evidence with deterministic first-attempt integration failure",
+            "chunk_id": "62000000-0000-0000-0000-000000000054",
+            "source_id": "52000000-0000-0000-0000-000000000054",
+            "source_kind": "case_document"
+          },
+          {
+            "id": "policy-91000000-0000-0000-0000-000000000012",
+            "excerpt": "POLICY_REQUIREMENT|code=KYB-BASE-2|description=The applicant legal entity must be supported by current incorporation evidence.|required_evidence=incorporation_record|exception_code=|exception_conditions=|exception_required_evidence=|escalation_conditions=Unresolved identity evidence requires analyst escalation.|precedence=",
+            "locator": "KYB-BASE-2",
+            "chunk_id": "91000000-0000-0000-0000-000000000012",
+            "source_id": "81000000-0000-0000-0000-000000000012",
+            "source_kind": "policy"
+          }
+        ],
+        "payload_hash": "ec957abfa165eae736f48bbfe715fbeed6ee2b53be4e3cfb606634d86c0bd0d1",
+        "started_at": "2026-09-20T20:36:08.713Z",
+        "completed_at": "2026-09-20T20:36:08.800Z",
+        "validated_at": "2026-09-20T20:36:08.803Z",
+        "attempt": 2
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000053",
+        "case_id": "32000000-0000-0000-0000-000000000053",
+        "langflow_job_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "specialty": "entity",
+        "task_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db:entity:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000053:entity:ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "agent_name": "kyb-entity-agent",
+        "agent_version": "3.1.0",
+        "status": "partial",
+        "source_scope": {
+          "case_evidence": "analysis_run_documents",
+          "network_access": false,
+          "scope_derived_by": "KYB Coordinator V3 from immutable run identity"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000053",
+            "excerpt": "ENTITY_FACT|field=legal_name|value=COORDINATOR CONFLICT LTD\nENTITY_FACT|field=jurisdiction|value=GB\nENTITY_FACT|field=identifier|identifier_type=registration_number|value=GB-COORD-53|jurisdiction=GB\nENTITY_FACT|field=address|address_type=registered|value=53 King Street London\nENTITY_FACT|field=address|address_type=registered|value=99 Bishopsgate London\nENTITY_FACT|field=address|address_type=operating|value=53 King Street London\nENTITY_FACT|field=address|address_type=mailing|value=53 King Street London\nOWNERSHIP_EDGE|owner=Mae Silva|owner_type=person|owned=Coordinator Conflict Ltd|percentage=70\nOWNERSHIP_EDGE|owner=Eli Price|owner_type=person|owned=Coordinator Conflict Ltd|percentage=30\nCASE_EVIDENCE|type=incorporation_record|reference=Companies House extract|status=supported|value=current\nCASE_EVIDENCE|type=operating_countries|reference=Country schedule|status=supported|value=GB;DE\nCASE_EVIDENCE|type=seller_screening_controls|reference=Screening procedure|status=supported|value=documented\nCASE_EVIDENCE|type=funds_flow|reference=Funds-flow diagram|status=supported|value=documented\nCASE_EVIDENCE|type=marketplace_license|reference=Marketplace license|status=supported|value=valid",
+            "locator": "Unresolved registered-address conflict",
+            "chunk_id": "62000000-0000-0000-0000-000000000053",
+            "source_id": "52000000-0000-0000-0000-000000000053",
+            "source_kind": "case_document"
+          }
+        ],
+        "payload_hash": "84a22831887343d213791140f479ac74291526561d196fff9872c5eb43a0c90e",
+        "started_at": "2026-09-20T20:35:51.878Z",
+        "completed_at": "2026-09-20T20:36:01.240Z",
+        "validated_at": "2026-09-20T20:36:01.240Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000053",
+        "case_id": "32000000-0000-0000-0000-000000000053",
+        "langflow_job_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "specialty": "ownership",
+        "task_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db:ownership:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000053:ownership:ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "agent_name": "kyb-ownership-agent",
+        "agent_version": "3.1.0",
+        "status": "completed",
+        "source_scope": {
+          "case_evidence": "analysis_run_documents",
+          "network_access": false,
+          "scope_derived_by": "KYB Coordinator V3 from immutable run identity"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000053",
+            "excerpt": "ENTITY_FACT|field=legal_name|value=COORDINATOR CONFLICT LTD\nENTITY_FACT|field=jurisdiction|value=GB\nENTITY_FACT|field=identifier|identifier_type=registration_number|value=GB-COORD-53|jurisdiction=GB\nENTITY_FACT|field=address|address_type=registered|value=53 King Street London\nENTITY_FACT|field=address|address_type=registered|value=99 Bishopsgate London\nENTITY_FACT|field=address|address_type=operating|value=53 King Street London\nENTITY_FACT|field=address|address_type=mailing|value=53 King Street London\nOWNERSHIP_EDGE|owner=Mae Silva|owner_type=person|owned=Coordinator Conflict Ltd|percentage=70\nOWNERSHIP_EDGE|owner=Eli Price|owner_type=person|owned=Coordinator Conflict Ltd|percentage=30\nCASE_EVIDENCE|type=incorporation_record|reference=Companies House extract|status=supported|value=current\nCASE_EVIDENCE|type=operating_countries|reference=Country schedule|status=supported|value=GB;DE\nCASE_EVIDENCE|type=seller_screening_controls|reference=Screening procedure|status=supported|value=documented\nCASE_EVIDENCE|type=funds_flow|reference=Funds-flow diagram|status=supported|value=documented\nCASE_EVIDENCE|type=marketplace_license|reference=Marketplace license|status=supported|value=valid",
+            "locator": "Unresolved registered-address conflict",
+            "chunk_id": "62000000-0000-0000-0000-000000000053",
+            "source_id": "52000000-0000-0000-0000-000000000053",
+            "source_kind": "case_document"
+          }
+        ],
+        "payload_hash": "629828e92fa122be941a27da2e247e1486ca95c1bef85d27f0792f7d77fa8db0",
+        "started_at": "2026-09-20T20:35:51.889Z",
+        "completed_at": "2026-09-20T20:35:57.664Z",
+        "validated_at": "2026-09-20T20:35:57.666Z",
+        "attempt": 1
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000053",
+        "case_id": "32000000-0000-0000-0000-000000000053",
+        "langflow_job_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "specialty": "policy",
+        "task_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db:policy:a1",
+        "context_id": "ctx:a4000000-0000-4000-8000-000000000053:policy:ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "agent_name": "kyb-policy-agent",
+        "agent_version": "3.2.0",
+        "status": "completed",
+        "source_scope": {
+          "policy_requirements": "analysis_run_policy_versions",
+          "separation_enforced": true,
+          "documentary_case_evidence": "analysis_run_documents"
+        },
+        "citations": [
+          {
+            "id": "case-62000000-0000-0000-0000-000000000053-10",
+            "excerpt": "CASE_EVIDENCE|type=incorporation_record|reference=Companies House extract|status=supported|value=current",
+            "locator": "Unresolved registered-address conflict",
+            "chunk_id": "62000000-0000-0000-0000-000000000053",
+            "source_id": "52000000-0000-0000-0000-000000000053",
+            "source_kind": "case_document"
+          },
+          {
+            "id": "case-62000000-0000-0000-0000-000000000053-11",
+            "excerpt": "CASE_EVIDENCE|type=operating_countries|reference=Country schedule|status=supported|value=GB;DE",
+            "locator": "Unresolved registered-address conflict",
+            "chunk_id": "62000000-0000-0000-0000-000000000053",
+            "source_id": "52000000-0000-0000-0000-000000000053",
+            "source_kind": "case_document"
+          },
+          {
+            "id": "case-62000000-0000-0000-0000-000000000053-12",
+            "excerpt": "CASE_EVIDENCE|type=seller_screening_controls|reference=Screening procedure|status=supported|value=documented",
+            "locator": "Unresolved registered-address conflict",
+            "chunk_id": "62000000-0000-0000-0000-000000000053",
+            "source_id": "52000000-0000-0000-0000-000000000053",
+            "source_kind": "case_document"
+          },
+          {
+            "id": "case-62000000-0000-0000-0000-000000000053-13",
+            "excerpt": "CASE_EVIDENCE|type=funds_flow|reference=Funds-flow diagram|status=supported|value=documented",
+            "locator": "Unresolved registered-address conflict",
+            "chunk_id": "62000000-0000-0000-0000-000000000053",
+            "source_id": "52000000-0000-0000-0000-000000000053",
+            "source_kind": "case_document"
+          },
+          {
+            "id": "case-62000000-0000-0000-0000-000000000053-14",
+            "excerpt": "CASE_EVIDENCE|type=marketplace_license|reference=Marketplace license|status=supported|value=valid",
+            "locator": "Unresolved registered-address conflict",
+            "chunk_id": "62000000-0000-0000-0000-000000000053",
+            "source_id": "52000000-0000-0000-0000-000000000053",
+            "source_kind": "case_document"
+          },
+          {
+            "id": "policy-91000000-0000-0000-0000-000000000012",
+            "excerpt": "POLICY_REQUIREMENT|code=KYB-BASE-2|description=The applicant legal entity must be supported by current incorporation evidence.|required_evidence=incorporation_record|exception_code=|exception_conditions=|exception_required_evidence=|escalation_conditions=Unresolved identity evidence requires analyst escalation.|precedence=",
+            "locator": "KYB-BASE-2",
+            "chunk_id": "91000000-0000-0000-0000-000000000012",
+            "source_id": "81000000-0000-0000-0000-000000000012",
+            "source_kind": "policy"
+          },
+          {
+            "id": "policy-91000000-0000-0000-0000-000000000013",
+            "excerpt": "POLICY_REQUIREMENT|code=MRKT-CB-1|description=A cross-border marketplace must document operating countries, seller screening controls, funds flow, and its marketplace license.|required_evidence=operating_countries;seller_screening_controls;funds_flow;marketplace_license|exception_code=|exception_conditions=|exception_required_evidence=|escalation_conditions=Missing or conflicting marketplace controls require enhanced review.|precedence=",
+            "locator": "MRKT-CB-1",
+            "chunk_id": "91000000-0000-0000-0000-000000000013",
+            "source_id": "81000000-0000-0000-0000-000000000013",
+            "source_kind": "policy"
+          }
+        ],
+        "payload_hash": "a1d508a23be36162aa3cb54fc70f577cedd5d3e50c2373210f1d7561e3edbec5",
+        "started_at": "2026-09-20T20:35:51.865Z",
+        "completed_at": "2026-09-20T20:35:52.822Z",
+        "validated_at": "2026-09-20T20:35:52.822Z",
+        "attempt": 1
+      }
+    ],
+    "checkpoints": [
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000053",
+        "case_id": "32000000-0000-0000-0000-000000000053",
+        "langflow_job_id": "ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "checkpoint_kind": "conflict_review",
+        "request_id": "conflict_review:ee973f17-df3b-4be9-88c7-b42ce4b159db",
+        "prompt": "{\"analysis_run_id\":\"a4000000-0000-4000-8000-000000000053\",\"case_id\":\"32000000-0000-0000-0000-000000000053\",\"concurrency\":{\"latest_start_before_earliest_completion\":true,\"overlap_proven\":true},\"conflicts\":[],\"contract_version\":\"3.4.0\",\"contribution_provenance\":[{\"agent\":{\"name\":\"kyb-entity-agent\",\"version\":\"3.1.0\"},\"context_id\":\"ctx:a4000000-0000-4000-8000-000000000053:entity:ee973f17-df3b-4be9-88c7-b42ce4b159db\",\"specialty\":\"entity\",\"task_id\":\"ee973f17-df3b-4be9-88c7-b42ce4b159db:entity:a1\"},{\"agent\":{\"name\":\"kyb-ownership-agent\",\"version\":\"3.1.0\"},\"context_id\":\"ctx:a4000000-0000-4000-8000-000000000053:ownership:ee973f17-df3b-4be9-88c7-b42ce4b159db\",\"specialty\":\"ownership\",\"task_id\":\"ee973f17-df3b-4be9-88c7-b42ce4b159db:ownership:a1\"},{\"agent\":{\"name\":\"kyb-policy-agent\",\"version\":\"3.2.0\"},\"context_id\":\"ctx:a4000000-0000-4000-8000-000000000053:policy:ee973f17-df3b-4be9-88c7-b42ce4b159db\",\"specialty\":\"policy\",\"task_id\":\"ee973f17-df3b-4be9-88c7-b42ce4b159db:policy:a1\"}],\"evidence_gaps\":[],\"findings\":[{\"citation_ids\":[\"case-62000000-0000-0000-0000-000000000053\"],\"specialty\":\"entity\",\"status\":\"partial\"},{\"citation_ids\":[\"case-62000000-0000-0000-0000-000000000053\"],\"specialty\":\"ownership\",\"status\":\"completed\"},{\"citation_ids\":[\"case-62000000-0000-0000-0000-000000000053-10\",\"case-62000000-0000-0000-0000-000000000053-11\",\"case-62000000-0000-0000-0000-000000000053-12\",\"case-62000000-0000-0000-0000-000000000053-13\",\"case-62000000-0000-0000-0000-000000000053-14\",\"policy-91000000-0000-0000-0000-000000000012\",\"policy-91000000-0000-0000-0000-000000000013\"],\"specialty\":\"policy\",\"status\":\"completed\"}],\"proposed_action\":null,\"proposed_next_steps\":[\"Route through the explicit human checkpoint for this state.\"],\"review_decision\":null,\"route\":\"CONFLICT\"}",
+        "status": "rejected",
+        "decision": "escalate",
+        "values": {
+          "rationale": "Unresolved registered-address conflict requires analyst review."
+        },
+        "created_at": "2026-09-20T20:36:07.134Z",
+        "decided_at": "2026-09-20T20:36:07.134Z"
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000054",
+        "case_id": "32000000-0000-0000-0000-000000000054",
+        "langflow_job_id": "7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "checkpoint_kind": "specialist_recovery",
+        "request_id": "specialist_recovery:7f68fff4-6fd4-49da-be14-b65c79d00306",
+        "prompt": "{\"analysis_run_id\":\"a4000000-0000-4000-8000-000000000054\",\"case_id\":\"32000000-0000-0000-0000-000000000054\",\"concurrency\":{\"latest_start_before_earliest_completion\":true,\"overlap_proven\":true},\"conflicts\":[],\"contract_version\":\"3.4.0\",\"contribution_provenance\":[{\"agent\":{\"name\":\"kyb-entity-agent\",\"version\":\"3.1.0\"},\"context_id\":\"ctx:a4000000-0000-4000-8000-000000000054:entity:7f68fff4-6fd4-49da-be14-b65c79d00306\",\"specialty\":\"entity\",\"task_id\":\"7f68fff4-6fd4-49da-be14-b65c79d00306:entity:a1\"},{\"agent\":{\"name\":\"kyb-ownership-agent\",\"version\":\"3.1.0\"},\"context_id\":\"ctx:a4000000-0000-4000-8000-000000000054:ownership:7f68fff4-6fd4-49da-be14-b65c79d00306\",\"specialty\":\"ownership\",\"task_id\":\"7f68fff4-6fd4-49da-be14-b65c79d00306:ownership:a1\"},{\"agent\":{\"name\":\"kyb-policy-agent\",\"version\":\"3.2.0\"},\"context_id\":\"ctx:a4000000-0000-4000-8000-000000000054:policy:7f68fff4-6fd4-49da-be14-b65c79d00306\",\"specialty\":\"policy\",\"task_id\":\"7f68fff4-6fd4-49da-be14-b65c79d00306:policy:a1\"}],\"evidence_gaps\":[],\"findings\":[{\"citation_ids\":[\"case-62000000-0000-0000-0000-000000000054\"],\"specialty\":\"entity\",\"status\":\"completed\"},{\"citation_ids\":[\"case-62000000-0000-0000-0000-000000000054\"],\"specialty\":\"ownership\",\"status\":\"completed\"},{\"citation_ids\":[\"case-62000000-0000-0000-0000-000000000054-9\",\"policy-91000000-0000-0000-0000-000000000012\"],\"specialty\":\"policy\",\"status\":\"failed\"}],\"proposed_action\":null,\"proposed_next_steps\":[\"Route through the explicit human checkpoint for this state.\"],\"review_decision\":null,\"route\":\"FAILURE\"}",
+        "status": "approved",
+        "decision": "retry",
+        "values": {
+          "rationale": "Retry the required Policy specialist once."
+        },
+        "created_at": "2026-09-20T20:36:08.805Z",
+        "decided_at": "2026-09-20T20:36:08.805Z"
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000052",
+        "case_id": "32000000-0000-0000-0000-000000000052",
+        "langflow_job_id": "24a129c0-bd03-4928-bcb9-90c87482838b",
+        "checkpoint_kind": "information_request",
+        "request_id": "information_request:24a129c0-bd03-4928-bcb9-90c87482838b",
+        "prompt": "{\"analysis_run_id\":\"a4000000-0000-4000-8000-000000000052\",\"case_id\":\"32000000-0000-0000-0000-000000000052\",\"concurrency\":{\"latest_start_before_earliest_completion\":true,\"overlap_proven\":true},\"conflicts\":[],\"contract_version\":\"3.4.0\",\"contribution_provenance\":[{\"agent\":{\"name\":\"kyb-entity-agent\",\"version\":\"3.1.0\"},\"context_id\":\"ctx:a4000000-0000-4000-8000-000000000052:entity:24a129c0-bd03-4928-bcb9-90c87482838b\",\"specialty\":\"entity\",\"task_id\":\"24a129c0-bd03-4928-bcb9-90c87482838b:entity:a1\"},{\"agent\":{\"name\":\"kyb-ownership-agent\",\"version\":\"3.1.0\"},\"context_id\":\"ctx:a4000000-0000-4000-8000-000000000052:ownership:24a129c0-bd03-4928-bcb9-90c87482838b\",\"specialty\":\"ownership\",\"task_id\":\"24a129c0-bd03-4928-bcb9-90c87482838b:ownership:a1\"},{\"agent\":{\"name\":\"kyb-policy-agent\",\"version\":\"3.2.0\"},\"context_id\":\"ctx:a4000000-0000-4000-8000-000000000052:policy:24a129c0-bd03-4928-bcb9-90c87482838b\",\"specialty\":\"policy\",\"task_id\":\"24a129c0-0000-0000-0000-000000000052:policy:a1\"}],\"evidence_gaps\":[],\"findings\":[{\"citation_ids\":[\"case-62000000-0000-0000-0000-000000000052\"],\"specialty\":\"entity\",\"status\":\"completed\"},{\"citation_ids\":[\"case-62000000-0000-0000-0000-000000000052\"],\"specialty\":\"ownership\",\"status\":\"partial\"},{\"citation_ids\":[\"case-62000000-0000-0000-0000-000000000052-10\",\"case-62000000-0000-0000-0000-000000000052-11\",\"case-62000000-0000-0000-0000-000000000052-12\",\"case-62000000-0000-0000-0000-000000000052-13\",\"case-62000000-0000-0000-0000-000000000052-9\",\"policy-91000000-0000-0000-0000-000000000012\",\"policy-91000000-0000-0000-0000-000000000013\"],\"specialty\":\"policy\",\"status\":\"completed\"}],\"proposed_action\":null,\"proposed_next_steps\":[\"Request targeted evidence\"],\"review_decision\":null,\"route\":\"INFO\"}",
+        "status": "submitted",
+        "decision": "submit_clarification",
+        "values": {
+          "text": "The remaining 18% is held by Maya Patel, a natural person, supported by the signed cap table amendment."
+        },
+        "created_at": "2026-09-20T20:36:34.186Z",
+        "decided_at": "2026-09-20T20:36:34.186Z"
+      },
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "langflow_job_id": "35a61193-2d26-4310-8180-673b4d5da5f2",
+        "checkpoint_kind": "analyst_approval",
+        "request_id": "analyst_approval:35a61193-2d26-4310-8180-673b4d5da5f2",
+        "prompt": "Approve the cited proposed mark_ready_for_review action exactly as consolidated, or reject it. No action executes without this decision.",
+        "status": "rejected",
+        "decision": "reject",
+        "values": {
+          "rationale": "Analyst rejects proposed action."
+        },
+        "created_at": "2026-09-20T20:40:50.849Z",
+        "decided_at": "2026-09-20T20:40:50.849Z"
+      }
+    ],
+    "actions": [
+      {
+        "analysis_run_id": "a4000000-0000-4000-8000-000000000051",
+        "case_id": "32000000-0000-0000-0000-000000000051",
+        "proposed_action_id": "b92ba783-ce42-460d-95aa-0925e1ee9f6c",
+        "idempotency_key": "coord-v3-action:a4000000-0000-4000-8000-000000000051:mark-ready",
+        "proposal_hash": "eaee00a80347140bc8ee44af8aa252176381819fcb2e3455d414b738d996d6b7",
+        "approval_id": "4a299993-55b0-4740-bc67-a05137912923",
+        "status": "executed",
+        "result": {
+          "case_state": "ready_for_review",
+          "executed_at": "2026-09-20T20:24:58.203679+00:00",
+          "recorded_by": "KYB Coordinator V3"
+        },
+        "executed_at": "2026-09-20T20:24:58.203Z"
+      }
+    ]
+  }
+}

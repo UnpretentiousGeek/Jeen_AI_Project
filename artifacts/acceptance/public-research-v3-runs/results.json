@@ -1,0 +1,138 @@
+{
+  "flow_id": "eaccfa78-adb0-4119-810a-ab141417dafb",
+  "verified_at": "2026-09-25T08:17:43.089Z",
+  "graph": {
+    "result": "PASS",
+    "node_count": 5,
+    "edge_count": 5,
+    "nodes": [
+      "Chat Input",
+      "Public Research Agent \u2014 Structured Contribution",
+      "Chat Output",
+      "Scope Public Research Operation",
+      "Validate Public Research Contribution"
+    ],
+    "edges": [
+      "ChatInput-PublicResearchV3->CustomComponent-PublicResearchScopeV3",
+      "CustomComponent-PublicResearchValidatorV3->ChatOutput-PublicResearchV3",
+      "Agent-PublicResearchV3->CustomComponent-PublicResearchValidatorV3",
+      "CustomComponent-PublicResearchScopeV3->Agent-PublicResearchV3",
+      "CustomComponent-PublicResearchScopeV3->CustomComponent-PublicResearchValidatorV3"
+    ],
+    "forbidden_network_components": []
+  },
+  "scenarios": {
+    "precise_proposal_from_documented_gap": {
+      "result": "PASS",
+      "proposal": {
+        "proposal_kind": "search_execution_approval",
+        "evidence_gap_id": "b3000000-0000-4000-8000-000000000041",
+        "claim_id": "licensing",
+        "claim": "Public Research Example 41 Ltd holds money transmitter license MT-41.",
+        "query": "\"Public Research Example 41 Ltd\" \"MT-41\"",
+        "allowed_domains": [
+          "regulator.example.gov"
+        ],
+        "disclosed_applicant_fields": [
+          "legal_name",
+          "claimed_license_type",
+          "jurisdiction"
+        ],
+        "result_limit": 5,
+        "rationale": "Resolve the documented licensing evidence gap using bounded official-domain research.",
+        "requires_explicit_search_execution_approval": true,
+        "requires_separate_web_result_review": true
+      }
+    },
+    "same_name_unrelated_rejected": {
+      "result": "PASS",
+      "match": {
+        "immutable_result_id": "72000000-0000-4000-8000-000000000421",
+        "match_status": "rejected",
+        "signals": [
+          "legal_name"
+        ],
+        "matching_identifiers": [],
+        "matching_other_evidence": [],
+        "confidence": 0.2,
+        "reason": "The source lacks a corroborating identifier, official domain, address-plus-jurisdiction pair, or other supplied evidence; a name match alone is insufficient."
+      }
+    },
+    "registration_does_not_support_licensing": {
+      "result": "PASS",
+      "assessment": {
+        "claim_id": "licensing",
+        "claim": "Public Research Example 43 Ltd holds money transmitter license MT-43.",
+        "outcome": "evidence_gap",
+        "supporting_citation_ids": [],
+        "contradicting_citation_ids": [],
+        "limitation_citation_ids": [
+          "web-72000000-0000-4000-8000-000000000431"
+        ],
+        "limitations": [
+          "1 matched accepted result(s) do not address licensing.",
+          "No matched, accepted, in-scope result supports or contradicts the investigated claim."
+        ],
+        "confidence": 0
+      }
+    },
+    "contradictory_accepted_sources_explicit": {
+      "result": "PASS",
+      "conflict": {
+        "claim_id": "licensing",
+        "description": "Accepted, applicant-matched sources explicitly disagree on the investigated claim.",
+        "supporting_citation_ids": [
+          "web-72000000-0000-4000-8000-000000000441"
+        ],
+        "contradicting_citation_ids": [
+          "web-72000000-0000-4000-8000-000000000442"
+        ]
+      }
+    },
+    "insufficient_results_gap_or_follow_up": {
+      "result": "PASS",
+      "follow_up": {
+        "claim": "Public Research Example 45 Ltd holds money transmitter license MT-45.",
+        "query": "site:regulator.example.gov \"GB-PR-0045\" \"MT-45\"",
+        "claim_id": "licensing",
+        "rationale": "A second identifier-specific official-regulator query may resolve the remaining gap.",
+        "result_limit": 3,
+        "allowed_domains": [
+          "regulator.example.gov"
+        ],
+        "disclosed_applicant_fields": [
+          "registration_number",
+          "claimed_license_type"
+        ],
+        "proposal_kind": "search_execution_approval",
+        "requires_fresh_approval": true,
+        "requires_separate_web_result_review": true
+      }
+    },
+    "pending_and_rejected_excluded": {
+      "result": "PASS",
+      "excluded_states": [
+        "pending_review",
+        "rejected",
+        "unapproved"
+      ]
+    },
+    "outside_approved_scope_rejected": {
+      "result": "PASS",
+      "result_domain_exclusion": true,
+      "altered_query_http_status": 500,
+      "altered_domains_http_status": 500,
+      "altered_disclosure_http_status": 500
+    },
+    "cross_case_run_rejected": {
+      "result": "PASS",
+      "http_status": 500
+    },
+    "fabricated_or_altered_citations_rejected": {
+      "result": "PASS",
+      "normal_flow_http_status": 200,
+      "direct_validator_test": "artifacts/acceptance/public-research-v3-runs/09b-validator-tamper.json",
+      "tampered_context_proof_recomputed": true
+    }
+  }
+}
